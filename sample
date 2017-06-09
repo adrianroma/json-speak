@@ -1,5 +1,5 @@
 {
-  "Calculate this addiction":["ADD",3,4,5,6,1],
+  "Calculate this addtion":["ADD",3,4,5,6,1],
   "Calculate this operation":["ADD",["MULTIPLY",3,4,5,5],3,-4,5],
   "Solve this":["EQUAL",["POWER",x,2],["ADD","x",2]],
   "Who are you?":["TALK",["RESPONSE","My name is John"],["QUESTION","and you ?"],["HUMMOR","ha ha ha"]],
