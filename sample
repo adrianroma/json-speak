@@ -16,6 +16,7 @@
             ["60":"^([1-9]|[1-5][0-9]|60|all)$"],
             ["email":"(^[a-zA-Z0-9_.]*[@])([@]*[a-zA-Z0-9\-.]*)"],
             ["password":""],
+            ["boolean":"\b^TRUE$\b|\b^FALSE\b"]
             ["token":""],
             ["lowerCase":""],
             ["uperCase":""],
@@ -35,7 +36,7 @@
             ["accountId:""],
             ["storeId":""],
             ["userId":""],
-            ["way":""],
+            ["way":"\b^up$\b|\b^down$\b|\b^left$\b|\b^right$\b"],
             ["uri":""],
             ["url":""]
             ["imageFormat":""],
