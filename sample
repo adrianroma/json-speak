@@ -14,12 +14,13 @@
             ["text":""],
             ["numbers":"^[0-9]*$"],
             ["60":"^([1-9]|[1-5][0-9]|60|all)$"],
+            ["nick":"^[0-9a-zA-Z ]{1,9}$"],
             ["email":"(^[a-zA-Z0-9_.]*[@])([@]*[a-zA-Z0-9\-.]*)"],
             ["password":""],
             ["boolean":"\b^TRUE$\b|\b^FALSE\b"]
             ["token":""],
-            ["lowerCase":""],
-            ["uperCase":""],
+            ["lowerCase":"^[a-z]*$"],
+            ["uperCase":"^[A-Z]*$"],
             ["entity":""],
             ["variable":""],
             ["name":"^[A-Z]'?[- a-zA-Z]([a-zA-Z])*$"]
@@ -40,7 +41,7 @@
             ["uri":""],
             ["url":""]
             ["imageFormat":""],
-            ["soundFormat":""],
+            ["soundFormat":"^[0-9a-zA-Z]*["."][m][p][3]$"],
             ["fileFormat":""],
             ["creditCard":""],
             ["ui":""],
