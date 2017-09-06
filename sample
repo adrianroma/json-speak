@@ -58,7 +58,8 @@
           }
  },
  "actions":{
-        "go":[""],
+        "new":[],
+        "goTo":[],
         "edit":[],
         "write":[],
         "inspect":[],
@@ -71,6 +72,8 @@
         "start":[],
         "restart":[],
         "load":[],
+        "history":[],
+        "restore":[],
         "reload":[],
         "move":[],
         "search":[],
@@ -94,9 +97,25 @@
         "pickUp":[],
         "destroy":[],
         "invert":[],
-        "mirror":[],
+        "revert":[],
         "round":[],
         "random":[],
-        "garbage":[]
+        "garbage":[],
+        "view":[],
+        "time":[],
+        "cancel":[],
+        "send":[],
+        "submit":[],
+        "squere":[],
+        "add":[],
+        "pow":[],
+        "explode":[],
+        "implode":[],
+        "size":[],
+        "get":[],
+        "set":[],
+        "put":[],
+        "step":[],
+        "rotate":[]
  }
 }
