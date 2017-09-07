@@ -7,6 +7,10 @@
   "Seudo problem":[["INITIAL",[["EQUAL",x,5],["NEVER_EQUAL",a,3]]],["SOLVE",["EQUATION",[EQUAL,x,["ADD",a,3]]]]]
   }
  "data":{
+    "variable":{
+    [],
+    []
+    },
     "type":{["alphaNumeric","^[a-zA-Z0-9_]*$"],
             ["simpleNumeric","^(?:[1-9]|0[1-9]|10)$"],
             ["letter":"^[a-z]$"],
@@ -29,7 +33,6 @@
             ["entity":"^[a-z0-9"."]+$"],
             ["variable":""],
             ["name":"^[A-Z]'?[- a-zA-Z]([a-zA-Z])*$"],
-            ["user_name":""],
             ["date":"^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$"],
             ["time":"^([1-9]|[1-2][0-4]|24|all)[":"]([1-9]|[1-5][0-9]|60|all)[":"]([1-9]|[1-5][0-9]|60|all)$"],
             ["schedule":""],
@@ -95,6 +98,11 @@
         "explode":[],
         "compare":[],
         "truncate":[],
+        "property":[],
+        "setProperty":[],
+        "getProperty":[],
+        "function":[],
+        "matrix":[],
         "cat":[],
         "cache":[],
         "backUp":[],
@@ -126,7 +134,7 @@
         "get":[],
         "set":[],
         "put":[],
-        "stepBy":[],
+        "step":[],
         "rotate":[],
         "temp":[],
         "wget":[],
@@ -142,5 +150,30 @@
         "password":[],
         "find":[],
         "search":[]
+ },
+ "entities":{
+    "fullName":[""],
+    "account":["nick","password"]
+ },
+ "collections":{
+     "stores":[],
+     "clients":[],
+     "relations":[],
+     "products":[],
+     "orders":[],
+     "users":[],
+     "book":[],
+     "messages":[],
+     "reviews":[],
+     "articles":[],
+     "reviews":[],
+     "tasks":[],
+     "courses":[],
+     "ads":[],
+     "providers":[],
+     "feedBack":[],
+     "themes":[]
+ },
+ "sets":{
  }
 }
