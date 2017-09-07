@@ -8,8 +8,40 @@
   }
  "data":{
     "variable":{
-    [],
-    []
+    "userName",
+    "userEmail",
+    "userPassword",
+    "userToken",
+    "userPhone",
+    "userImage",
+    "userDescription",
+    "userCategory",
+    "name",
+    "lastName",
+    "surName",
+    "school",
+    "street",
+    "state",
+    "city",
+    "box",
+    "country",
+    "region",
+    "build",
+    "interior",
+    "number",
+    "neighborhood",
+    "road",
+    "highway",
+    "county",
+    "mobile",
+    "sku",
+    "productName",
+    "productDescription",
+    "productSku",
+    "productId",
+    "productImages"
+    
+    
     },
     "type":{["alphaNumeric","^[a-zA-Z0-9_]*$"],
             ["simpleNumeric","^(?:[1-9]|0[1-9]|10)$"],
@@ -102,7 +134,9 @@
         "setProperty":[],
         "getProperty":[],
         "function":[],
-        "matrix":[],
+        "addMatrix":[],
+        "delMatrix":[],
+        "Matrix":[],
         "cat":[],
         "cache":[],
         "backUp":[],
@@ -163,6 +197,8 @@
      "orders":[],
      "users":[],
      "book":[],
+     "payments":[],
+     "emails":[],
      "messages":[],
      "reviews":[],
      "articles":[],
@@ -172,8 +208,16 @@
      "ads":[],
      "providers":[],
      "feedBack":[],
-     "themes":[]
+     "themes":[],
+     "campaigns":[],
+     "configuration":[],
+     "groups":[],
+     "places":[],
+     "translates":[]
  },
  "sets":{
+    "login":[],
+    "home":[],
+    "":[]
  }
 }
