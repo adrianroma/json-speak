@@ -8,6 +8,7 @@
   }
  "data":{
     "variable":{
+    "newUser":"boolean",
     "userId":"entity",
     "userName":"name",
     "userEmail":"email",
@@ -26,6 +27,9 @@
     "userFinalName"
     "userAddress",
     "userPayments",
+    "userCurrency",
+    "userLanguage",
+    "userBalance",
     "userBook",
     "userClients",
     "userShippings",
@@ -36,8 +40,8 @@
     "userGroups",
     "userStatus",
     "userDashboard",
-    "address",
-    "knowledge",
+    "userPrivilegies",
+    "newAddress",
     "addressId",
     "addressName",
     "addressStreet",
@@ -56,6 +60,7 @@
     "addressCounty",
     "addressPhone",
     "addressStatus",
+    "newProduct",
     "productName",
     "productDescription",
     "productArticle",
@@ -75,6 +80,7 @@
     "productTax",
     "productSummary",
     "productStatus",
+    "newQuote",
     "quoteAds",
     "quoteSellers",
     "quotePlaces",
@@ -87,6 +93,7 @@
     "quotePayments",
     "quoteEvents",
     "quoteStep",
+    "newOrder",
     "orderAds",
     "orderSellers",
     "orderPlaces",
@@ -99,6 +106,7 @@
     "orderPayments",
     "orderEvents",
     "orderStep", 
+    "newPromotion",
     "promotionId",
     "promotionAds",
     "promotionName",
@@ -112,6 +120,10 @@
     "promotionDate",
     "promotionStart",
     "promotionEnd",
+    "newCourse",
+    "schoolId",
+    "schoolName",
+    "schoolCarrer",
     "courseId",
     "courseName",
     "courseToken",
@@ -154,6 +166,7 @@
     "courseParent",
     "courseSeller",
     "courseDate",
+    "newTask",
     "taskId",
     "taskTime",
     "taskName",
@@ -170,6 +183,7 @@
     "processIn",
     "processInput",
     "processDate"
+    "newImage",
     "imageId",
     "imageGallery",
     "imageMain",
@@ -185,7 +199,8 @@
     "imageSecret",
     "imageThumbnails",
     "imageDate",
-    "imageStatus"
+    "imageStatus",
+    "newEmail",
     "emailId",
     "emailTemplate",
     "emailTheme",
@@ -199,6 +214,7 @@
     "emailSchedule",
     "emailHistory",
     "emailStatus",
+    "newVideo",
     "videoId",
     "videoTitle",
     "videoDuration",
@@ -210,6 +226,7 @@
     "videoComments",
     "videoDate",
     "videoStatus",
+    "newComment"
     "commentId",
     "commentTitle",
     "commentDescription",
@@ -218,6 +235,7 @@
     "commentSort",
     "commentDate",
     "commentStatus"
+    "newText",
     "textId",
     "textData",
     "textLanguage",
@@ -231,6 +249,7 @@
     "propertyProcess",
     "propertyIn",
     "propertyOut"
+    "newUrl",
     "urlId",
     "url",
     "urlAlias",
@@ -238,6 +257,7 @@
     "urlCallBack",
     "urlJson",
     "urlService",
+    "newApi",
     "apiId",
     "apiName",
     "apiToken",
@@ -247,12 +267,9 @@
     "apiData",
     "apiCallBack",
     "apiResponse",
+    "apiErrors",
     "apiRequest"
     "urlList"
-    "currency",
-    "discount",
-    "tax",
-    "amount"
     
     
     },
