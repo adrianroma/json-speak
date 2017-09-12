@@ -40,7 +40,7 @@
     "userGroups":"entity",
     "userStatus":"status",
     "userDashboard":"entity",
-    "userPrivilegies",
+    "userPrivilegies":"allow",
     "newAddress":"boolean",
     "addressId",
     "addressName",
@@ -60,8 +60,8 @@
     "addressCounty",
     "addressPhone",
     "addressStatus",
-    "newProduct",
-    "productName",
+    "newProduct":"boolean",
+    "productName":"alphaNumeric",
     "productDescription",
     "productArticle",
     "productSku",
@@ -314,7 +314,7 @@
     
     },
     "type":{
-           "alphaNumeric":"^[a-zA-Z0-9_]*$",
+           "alphaNumeric":"^[a-zA-Z0-9_ ]*$",
            "simpleNumeric":"^(?:[1-9]|0[1-9]|10)$",
             "letter":"^[a-z]$",
             "word":"^[a-z]*$",
@@ -324,6 +324,7 @@
             "Q":"[0-9]*["."][0-9]*$|^[0-9]*$",
             "R":"[+-][0-9]*["."][0-9]*$|^[+-][0-9]*$",
             "HEX":"^#?([a-f0-9]{6}|[a-f0-9]{3})$",
+            "currency":"",
             "60":"^([1-9]|[1-5][0-9]|60|all)$",
             "nick":"^[0-9a-zA-Z ]{1,9}$",
             "email":"(^[a-zA-Z0-9_.]*[@])([@]*[a-zA-Z0-9\-.]*)",
@@ -363,7 +364,9 @@
             "creditCard":"",
             "operation":"",
             "geoLat":"^[9][0]["."][0]{1,3}$)|(^[1-8][0-9]["."][0-9]{1,3}$)|(^[0-9]["."][0-9]{1,3}$",
-            "geoLog":"([1][8][0]["."][0][0][0])|(^[1][0-7][0-9]["."][0-9]{1,3}$)|(^[0-9]{1,2}["."][0-9]{0,3}$)"
+            "geoLog":"([1][8][0]["."][0][0][0])|(^[1][0-7][0-9]["."][0-9]{1,3}$)|(^[0-9]{1,2}["."][0-9]{0,3}$)",
+            "allow":"",
+            "privilege":""
           }
  },
  "properties":{
@@ -467,8 +470,15 @@
         "search":[]
  },
  "entities":{
-    "fullName":["name","lastName"],
-    "account":["nick","password"]
+        "account":["userId","addressId","storeId"],
+        "client":["userId","addressId","dashboardId"],
+        "seller":["processId","promotionId","apiId"],
+        "retail":["productId","serviceId","promotionId","imageId","videoId","processId"]
+        "sell":["userId","quoteId","promotionId","searchId","processId"]
+        "sales":["userId","orderId","promotionId"],
+        "article":["userId","textId","commentId","imageId"],
+        "send":["userId","orderId","mailId","documentId"],
+        "item":["storeId","productId","serviceId","promotionId"],
  },
  "collections":{
      "stores":[],
