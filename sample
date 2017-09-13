@@ -7,7 +7,40 @@
   "Seudo problem":[["INITIAL",[["EQUAL",x,5],["NEVER_EQUAL",a,3]]],["SOLVE",["EQUATION",[EQUAL,x,["ADD",a,3]]]]]
   }
  "data":{
-    "variable":{
+    "entityVariables":{
+        "newUser":"boolean",
+    "accountId":"entity",
+    "accountName":"name",
+    "accountEmail":"email",
+    "accountSocial":"nick",
+    "accountUrls":"url",
+    "accountMap":["geoLat","geolog"],
+    "accountPassword":["password"],
+    "accountToken":"token",
+    "accountPhone":"mobile",
+    "accountImage":"imageFormat",
+    "accountImages"["imageFormat","imageFormat","imageFormat"],
+    "accountDescription":"text",
+    "accountCategories":"alphaNumeric",
+    "accountTitles":"word",
+    "accountLastName":"name",
+    "accountFinalName":"name"
+    "accountAddress":"entity",
+    "accountPayments":"entity",
+    "accountCurrency":"currency",
+    "accountLanguage":"language",
+    "accountBalance":"entity",
+    "accountBook":"entity",
+    "accountClient":"entity",
+    "accountShipping":"entity",
+    "accountFriend":"entity",
+    "accountTask":"entity",
+    "accountSchedule":"schedule",
+    "accountStore":"entity",
+    "accountGroup":"entity",
+    "accountStatus":"status",
+    "accountDashboard":"entity",
+    "accountPrivilegie":"allow",
     "newUser":"boolean",
     "userId":"entity",
     "userName":"name",
@@ -324,7 +357,7 @@
     
     
     },
-    "type":{
+    "entityType":{
            "alphaNumeric":"^[a-zA-Z0-9_ ]*$",
            "simpleNumeric":"^(?:[1-9]|0[1-9]|10)$",
             "letter":"^[a-z]$",
@@ -380,7 +413,7 @@
             "privilege":""
           }
  },
- "properties":{
+ "entityProperties":{
         "new":[],
         "goTo":[],
         "edit":[],
@@ -480,11 +513,12 @@
         "find":[],
         "search":[]
  },
- "entities":{
+ "entityValue":{
         "account":["userId","addressId","storeId","groupId","urlId"],
         "client":["userId","addressId","dashboardId","groupId","urlId"],
         "seller":["processId","promotionId","apiId","urlId"],
-        "retail":["productId","serviceId","promotionId","imageId","videoId","processId","urlId"]
+        "retail":["productId","serviceId","promotionId","imageId","videoId","processId","urlId"],
+        "ads":["promotionId","userId","urlId","imageId","videoId","textId"],
         "sell":["userId","quoteId","promotionId","searchId","processId","urlId"]
         "sales":["userId","orderId","promotionId","urlId"],
         "article":["userId","textId","commentId","imageId","tagId","urlId"],
@@ -493,35 +527,14 @@
         "translate":["worId","languageId","translateId","urlId"],
         "skin":["classId","seasonId","groupId","urlId"]
  },
- "collections":{
-     "stores":[],
-     "clients":[],
-     "relations":[],
-     "products":[],
-     "orders":[],
-     "users":[],
-     "books":[],
-     "payments":[],
-     "address":[],
-     "emails":[],
-     "messages":[],
-     "reviews":[],
-     "articles":[],
-     "reviews":[],
-     "tasks":[],
-     "courses":[],
-     "carrers":[],
-     "places":[],
-     "schools":[],
-     "ads":[],
-     "providers":[],
-     "feedBack":[],
-     "themes":[],
-     "campaigns":[],
-     "configuration":[],
-     "groups":[],
-     "places":[],
-     "translates":[]
+ "entity":{
+     "stores":{"account":["view","edit"],
+               "item":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "sales":["view","edit","remove"],
+               "client":["view","new","add","remove","copy","edit","search","sortBy","filterBy"]
+              },
+     
+
  },
  "sets":{
     "login":[],
