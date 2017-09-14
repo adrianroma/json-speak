@@ -8,7 +8,15 @@
   }
  "data":{
     "entityVariables":{
-        "newUser":"boolean",
+    "newEquation":"boolean",
+    "equationId":"",
+    "equationName":"",
+    "equationDescription":"",
+    "equationInput":"",
+    "equationProcess":"",
+    "equationState":"",
+    "equationOutput":""
+    "newCccount":"boolean",
     "accountId":"entity",
     "accountName":"name",
     "accountEmail":"email",
@@ -297,6 +305,17 @@
     "videoComments",
     "videoDate",
     "videoStatus",
+    "fileId",
+    "fileTitle",
+    "fileDuration",
+    "fileResolution",
+    "fileWeight",
+    "fileDescription",
+    "fileOwner",
+    "fileRating"
+    "fileComments",
+    "fileDate",
+    "fileStatus",
     "newComment"
     "commentId",
     "commentTitle",
@@ -328,6 +347,7 @@
     "urlCallBack",
     "urlJson",
     "urlService",
+    "urlList",
     "newApi",
     "apiId",
     "apiName",
@@ -353,9 +373,12 @@
     "searchResponse",
     "searchCallBack",
     "searchUrl",
-    "urlList"
-    
-    
+    "newDashboard",
+    "dashboardId",
+    "dashboardName",
+    "dashboardSummary",
+    "dashboardOutput",
+    "dashboardInput" 
     },
     "entityType":{
            "alphaNumeric":"^[a-zA-Z0-9_ ]*$",
@@ -463,7 +486,7 @@
         "function":[],
         "addMatrix":[],
         "delMatrix":[],
-        "Matrix":[],
+        "matrix":[],
         "cat":[],
         "cache":[],
         "backUp":[],
@@ -513,56 +536,79 @@
         "find":[],
         "search":[]
  },
- "entityValue":{
+ "entity":{
         "account":["userId","addressId","storeId","groupId","urlId"],
         "client":["userId","addressId","dashboardId","groupId","urlId"],
         "seller":["processId","promotionId","apiId","urlId"],
         "retail":["productId","serviceId","promotionId","imageId","videoId","processId","urlId"],
         "ads":["promotionId","userId","urlId","imageId","videoId","textId"],
-        "sell":["userId","quoteId","promotionId","searchId","processId","urlId"]
         "sales":["userId","orderId","promotionId","urlId"],
         "article":["userId","textId","commentId","imageId","tagId","urlId"],
         "send":["userId","orderId","mailId","documentId","urlId"],
         "item":["storeId","productId","urlId",adsId,"serviceId","tagId","promotionId","urlId"],
         "translate":["worId","languageId","translateId","urlId"],
-        "skin":["classId","seasonId","groupId","urlId"]
+        "skin":["classId","seasonId","groupId","urlId"],
  },
- "entity":{
-     "stores":{"account":["view","edit"],
+ 
+ "cache":{
+        "sell":["userId","quoteId","promotionId","searchId","processId","urlId"]
+        
+ }
+ 
+ "set":{
+     "store":{ "account":["view","edit"],
                "item":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "sales":["view","edit","remove"],
-               "client":["view","new","add","remove","copy","edit","search","sortBy","filterBy"]
+               "sales":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "client":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "ads":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "send":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "article":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
+               "translate":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
               },
+     "dashboard":{
+     
+     }         
+     "catalog":{
+              "item":["view","search","filterBy","sortBy","translate","difference","pickUp"]
+              "ads":["view","pickUp","setUp","apply","remove"],
+              "retail":["view","pickUp","setUp","apply","remove"],
+              "translate":[]
+     },
+     "view":{
+     
+     }
+     "login":{
+             "client":[]
+             "article":[]
+     },
+     "register":{
+     }
+     
+     "checkout":{
+          "client":[],
+          "sell":[],
+          "promotion":[]
+          "dashBoard":[],
+          "translate":[]
+     }
+     "track":{
+         "client":[],
+         "seller":[],
+         "sales":[]
+     },
+     "summary":{
+             "client":[],
+             "seles":[],
+             "translate":[]
+             
+             
+     },
+     "successfull":{
+     
+     
+     }
      
 
- },
- "sets":{
-    "login":[],
-    "home":[],
-    "schools":[],
-    "careers":[],
-    "courses":[],
-    "follow":[],
-    "config":[],
-    "load":[],
-    "request":[],
-    "response":[],
-    "processing":[],
-    "wait":[],
-    "places":[],
-    "viewCourse":[],
-    "viewSchool":[],
-    "viewCarrer":[],
-    "viewProfile":[],
-    "dashBoard":[],
-    "account":[],
-    "register":[],
-    "checkout":[],
-    "pay":[],
-    "success":[],
-    "try":[],
-    "track":[],
-    "error":[],
-    "ads":[]
  }
+
 }
