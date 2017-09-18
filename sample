@@ -324,7 +324,14 @@
     "commentRating",
     "commentSort",
     "commentDate",
-    "commentStatus"
+    "commentStatus",
+    "categoryId",
+    "categoryGroup",
+    "categoryName",
+    "categoryDescription"
+    "categoryHistory",
+    "categoryKeywords",
+    "categoryTags"
     "newText",
     "textId",
     "textData",
@@ -441,94 +448,101 @@
 
  },
  "entity":{
-        "account":["userId","addressId","storeId","groupId","urlId"],
-        "client":["userId","addressId","dashboardId","groupId","urlId"],
-        "seller":["processId","promotionId","apiId","urlId"],
-        "retail":["productId","serviceId","promotionId","imageId","videoId","processId","urlId"],
-        "ads":["promotionId","userId","urlId","imageId","videoId","textId"],
+        "account":{
+          "userId":["view","edit"],
+          "addressId":["view","add","edit","copy"],
+          "storeId",
+          "groupId",
+          "urlId"
+          },                
+        },
+        
+        "client":{
+         "userId",
+         "addressId",
+         "dashboardId",
+         "groupId",
+         "urlId"
+        
+        },
+        "seller":{
+        "processId","promotionId","apiId","urlId"},
+        "retail":{
+        "productId",
+        "serviceId",
+        "promotionId",
+        "imageId",
+        "videoId",
+        "processId",
+        "urlId"
+        },
+        "ads":{
+        "promotionId",
+        "userId",
+        "urlId",
+        "imageId",
+        "videoId",
+        "textId"},
         "sales":["userId","orderId","promotionId","urlId"],
-        "article":["userId","textId","commentId","imageId","tagId","urlId"],
+        "article":["userId","textId","commentId","imageId","tagId","urlId","categoryId"],
+        "document":["userId","fileId","textId","urlId","tatId","categoryId"]
         "send":["userId","orderId","mailId","documentId","urlId"],
-        "item":["storeId","productId","urlId",adsId,"serviceId","tagId","promotionId","urlId"],
+        "item":["storeId","productId","categoryId","urlId",adsId,"serviceId","tagId","promotionId","urlId"],
         "translate":["worId","languageId","translateId","urlId"],
-        "skin":["classId","seasonId","groupId","urlId"],
- },
- 
- "actions":{
-        "sell":["userId","quoteId","promotionId","searchId","processId","urlId"]
-        "register":[""]
+        "skin":["classId","seasonId","groupId","urlId"]
  }
- 
+
  "set":{
-     "store":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }
-             }
+     "enter":{
               
-     "dashboard":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }
-     }         
+         
+     
+     },
+     "admin":{
+         
+     },
+     "store":{
+    
+             },
+     "sales":{
+     
+     },
+     "clients":{
+     },
+     "adversiting":{
+     
+     },
+     "index":{
+     
+     
+     },
      "catalog":{
-           "dynamic":{
-        
-            },
-            "static":{
-            
-             }
+ 
      },
      "view":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }     
+      
      }
      "login":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }             
+               
      },
      "register":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             },     
-     }
-     "checkout":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }        
+       
      },
-  
+     "dashboard":{
+     
+     },
+     cart:{
+     
+     },
+     "checkout":{
+         
+     },
      "successfull":{
-            "dynamic":{
-        
-            },
-            "static":{
-            
-             }     
      
      }
+     "section":{
      
-
+     }
  }
 
 }
