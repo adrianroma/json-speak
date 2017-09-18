@@ -437,104 +437,8 @@
           }
  },
  "entityProperties":{
-        "new":[],
-        "goTo":[],
-        "edit":[],
-        "write":[],
-        "inspect":[],
-        "backTo":[],
-        "this":[],
-        "bind":[],
-        "forwardTo":[],
-        "changeBy[]",
-        "move":[],
-        "remove":[],
-        "save":[],
-        "destroy":[],
-        "copy":[],
-        "paste":[],
-        "run":[],
-        "stop":[],
-        "start":[],
-        "restart":[],
-        "select":[],
-        "load":[],
-        "history":[],
-        "restore":[],
-        "reload":[],
-        "moveTo":[],
-        "search":[],
-        "replace":[],
-        "sortBy":[],
-        "filterBy":[],
-        "append":[],
-        "delete":[],
-        "insert":[],
-        "difference":[],
-        "clone":[],
-        "multiply":[],
-        "divide":[],
-        "subtract":[],
-        "summatory":[],
-        "log":[],
-        "explode":[],
-        "compare":[],
-        "truncate":[],
-        "property":[],
-        "setProperty":[],
-        "getProperty":[],
-        "function":[],
-        "addMatrix":[],
-        "delMatrix":[],
-        "matrix":[],
-        "cat":[],
-        "cache":[],
-        "backUp":[],
-        "setUp":[],
-        "error":[],
-        "log":[],
-        "clean":[],
-        "pickUp":[],
-        "destroy":[],
-        "invert":[],
-        "revert":[],
-        "round":[],
-        "random":[],
-        "garbage":[],
-        "view":[],
-        "time":[],
-        "cancel":[],
-        "send":[],
-        "submit":[],
-        "square":[],
-        "add":[],
-        "pow":[],
-        "module":[],
-        "explode":[],
-        "implode":[],
-        "size":[],
-        "getSize[]"
-        "resize":[],
-        "get":[],
-        "set":[],
-        "put":[],
-        "step":[],
-        "rotate":[],
-        "temp":[],
-        "toTrash:[]",
-        "wget":[],
-        "cron":[],
-        "check":[],
-        "state":[],
-        "translate":[],
-        "mark":[],
-        "group":[],
-        "dash":[],
-        "task":[],
-        "hash":[],
-        "password":[],
-        "find":[],
-        "search":[]
+        "new":["object"],
+
  },
  "entity":{
         "account":["userId","addressId","storeId","groupId","urlId"],
@@ -550,61 +454,77 @@
         "skin":["classId","seasonId","groupId","urlId"],
  },
  
- "cache":{
+ "actions":{
         "sell":["userId","quoteId","promotionId","searchId","processId","urlId"]
-        
+        "register":[""]
  }
  
  "set":{
-     "store":{ "account":["view","edit"],
-               "item":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "sales":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "client":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "ads":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "send":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "article":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-               "translate":["view","new","add","remove","copy","edit","search","sortBy","filterBy"],
-              },
+     "store":{
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }
+             }
+              
      "dashboard":{
-     
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }
      }         
      "catalog":{
-              "item":["view","search","filterBy","sortBy","translate","difference","pickUp"]
-              "ads":["view","pickUp","setUp","apply","remove"],
-              "retail":["view","pickUp","setUp","apply","remove"],
-              "translate":[]
+           "dynamic":{
+        
+            },
+            "static":{
+            
+             }
      },
      "view":{
-     
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }     
      }
      "login":{
-             "client":[]
-             "article":[]
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }             
      },
      "register":{
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             },     
      }
-     
      "checkout":{
-          "client":[],
-          "sell":[],
-          "promotion":[]
-          "dashBoard":[],
-          "translate":[]
-     }
-     "track":{
-         "client":[],
-         "seller":[],
-         "sales":[]
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }        
      },
-     "summary":{
-             "client":[],
-             "seles":[],
-             "translate":[]
-             
-             
-     },
+  
      "successfull":{
-     
+            "dynamic":{
+        
+            },
+            "static":{
+            
+             }     
      
      }
      
