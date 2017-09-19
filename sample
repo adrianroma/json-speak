@@ -7,7 +7,7 @@
   "Seudo problem":[["INITIAL",[["EQUAL",x,5],["NEVER_EQUAL",a,3]]],["SOLVE",["EQUATION",[EQUAL,x,["ADD",a,3]]]]]
   }
  "data":{
-    "entityVariables":{
+    "entityProperties":{
     "newEquation":"boolean",
     "equationId":"",
     "equationName":"",
@@ -443,106 +443,73 @@
             "privilege":""
           }
  },
- "entityProperties":{
-        "new":["object"],
-
+ "methods":{
+        "values",
+        "constructor",
+        "input",
+        "output",
+        "push",
+        "pop",
  },
- "entity":{
-        "account":{
-          "userId":["view","edit"],
-          "addressId":["view","add","edit","copy"],
-          "storeId",
-          "groupId",
-          "urlId"
-          },                
+ "class":{
+        "collection":{
+            "extends":[],
+            "constructor":{
+               "input":[],
+               "process":["privileges"],
+               "output":[],
+            },
+            "push":{
+              "input":[],
+              "process":[],
+              "output":[],
+            },
+            "pop":{
+               "input":[],
+              "process":[],
+              "output":[],
+            },
+            "filter":{
+               "input":[],
+              "process":[],
+              "output":[],
+            },
+            "delete":{
+               "input":[],
+              "process":[],
+              "output":[], 
+            },
+            "in":{
+               "input":[],
+              "process":[],
+              "output":[],
+            },
+            "out":{
+               "input":[],
+              "process":[],
+              "output":[],
+            }
+            
         },
-        
+        "product":{
+         "extend":["collection"]
+        },
         "client":{
-         "userId",
-         "addressId",
-         "dashboardId",
-         "groupId",
-         "urlId"
+         "extend":["collection"]
         
         },
-        "seller":{
-        "processId","promotionId","apiId","urlId"},
-        "retail":{
-        "productId",
-        "serviceId",
-        "promotionId",
-        "imageId",
-        "videoId",
-        "processId",
-        "urlId"
+        "account":{
+          "extend":["collection"]
         },
-        "ads":{
-        "promotionId",
-        "userId",
-        "urlId",
-        "imageId",
-        "videoId",
-        "textId"},
-        "sales":["userId","orderId","promotionId","urlId"],
-        "article":["userId","textId","commentId","imageId","tagId","urlId","categoryId"],
-        "document":["userId","fileId","textId","urlId","tatId","categoryId"]
-        "send":["userId","orderId","mailId","documentId","urlId"],
-        "item":["storeId","productId","categoryId","urlId",adsId,"serviceId","tagId","promotionId","urlId"],
-        "translate":["worId","languageId","translateId","urlId"],
-        "skin":["classId","seasonId","groupId","urlId"]
+        "buy":{
+        
+        }
+ 
+             
+        
+     
  }
 
- "set":{
-     "enter":{
-              
-         
-     
-     },
-     "admin":{
-         
-     },
-     "store":{
-    
-             },
-     "sales":{
-     
-     },
-     "clients":{
-     },
-     "adversiting":{
-     
-     },
-     "index":{
-     
-     
-     },
-     "catalog":{
- 
-     },
-     "view":{
-      
-     }
-     "login":{
-               
-     },
-     "register":{
-       
-     },
-     "dashboard":{
-     
-     },
-     cart:{
-     
-     },
-     "checkout":{
-         
-     },
-     "successfull":{
-     
-     }
-     "section":{
-     
-     }
- }
+
 
 }
