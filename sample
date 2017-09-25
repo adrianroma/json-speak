@@ -441,75 +441,61 @@
             "geoLog":"([1][8][0]["."][0][0][0])|(^[1][0-7][0-9]["."][0-9]{1,3}$)|(^[0-9]{1,2}["."][0-9]{0,3}$)",
             "allow":"",
             "privilege":""
+          },
+ "node":{
+          "sell":{
+          },
+          "catalog":{
+               
+                
+                 },
+          "article":{
+          
+          },
+          "view":{
+          },
+          "dashboard":{
+          
+          },
+          "checkout":{
+          
+          },
+          "buy":{
+          
+          },
+          "track":{
+          
+          },
+          "success":{
+          
+          
+          },
+          "register":{
+          },
+          "login":{
+          
+          
+          },
+          "dashboardAdmin"
+          ,
+          "users":{
+          },
+          "inventory":{
+          
+          },
+          "orders":{
+          
+          },
+          "clients":{
+          
           }
- },
- "methods":{
-        "values",
-        "constructor",
-        "input",
-        "output",
-        "push",
-        "pop",
- },
- "class":{
-        "collection":{
-            "extends":[],
-            "constructor":{
-               "input":[],
-               "process":["privileges"],
-               "output":[],
-            },
-            "push":{
-              "input":[],
-              "process":[],
-              "output":[],
-            },
-            "pop":{
-               "input":[],
-              "process":[],
-              "output":[],
-            },
-            "filter":{
-               "input":[],
-              "process":[],
-              "output":[],
-            },
-            "delete":{
-               "input":[],
-              "process":[],
-              "output":[], 
-            },
-            "in":{
-               "input":[],
-              "process":[],
-              "output":[],
-            },
-            "out":{
-               "input":[],
-              "process":[],
-              "output":[],
-            }
-            
-        },
-        "product":{
-         "extend":["collection"]
-        },
-        "client":{
-         "extend":["collection"]
-        
-        },
-        "account":{
-          "extend":["collection"]
-        },
-        "buy":{
-        
-        }
  
+ 
+ 
+ }
+
              
         
      
- }
-
-
 
 }
