@@ -29,7 +29,7 @@
     "accountImage":"imageFormat",
     "accountImages"["imageFormat","imageFormat","imageFormat"],
     "accountDescription":"text",
-    "accountCategories":"alphaNumeric",
+    "accountCategory":"alphaNumeric",
     "accountTitles":"word",
     "accountLastName":"name",
     "accountFinalName":"name"
@@ -62,7 +62,7 @@
     "userImage":"imageFormat",
     "userImages"["imageFormat","imageFormat","imageFormat"],
     "userDescription":"text",
-    "userCategories":"alphaNumeric",
+    "userCategory":"alphaNumeric",
     "userTitles":"word",
     "userLastName":"name",
     "userFinalName":"name"
@@ -87,6 +87,7 @@
     "groupName"
     "groupPrivilege",
     "groupTag",
+    "groupCategory",
     "newAddress":"boolean",
     "addressId",
     "addressName",
@@ -338,6 +339,7 @@
     "textLanguage",
     "textDate",
     "textTags",
+    "textCategory",
     "textKeyword",
     "textDate",
     "textStatus",
@@ -443,21 +445,56 @@
             "privilege":""
           },
  "sourceModel":{
-          "address",
-          "date",
-          "accountCategories",
-          "userCategories",
-          ""
+          "category:["push","pop","search","filter","load","remove","save"],
+          "account":["push","pop","search","filter","load","remove","save"],
+          "user":["push","pop","search","filter","load","remove","save"],
+          "course":["push","pop","search","filter","load","remove","save"],
+          "quote":["push","pop","search","filter","load","remove","save"],
+          "order":["push","pop","search","filter","load","remove","save"],
+          "file":["push","pop","search","filter","load","remove","save"],
+          "order":["push","pop","search","filter","load","remove","save"],
+          "api":["push","pop","search","filter","load","remove","save"],
+          "url":["push","pop","search","filter","load","remove","save"],
+          "region":["push","pop","search","filter","load","remove","save"],
+          "language":["push","pop","search","filter","load","remove","save"],
+          "date":["push","pop","search","filter","load","remove","save"],
+          "search":["push","pop","search","filter","load","remove","save"],
+          "dashboard":["push","pop","search","filter","load","remove","save"],
+          "text":["push","pop","search","filter","load","remove","save"],
+          "email":["push","pop","search","filter","load","remove","save"],
+          "task":["push","pop","search","filter","load","remove","save"],
+          "course":["push","pop","search","filter","load","remove","save"],
+          "service":["push","pop","search","filter","load","remove","save"],
+          "product":["push","pop","search","filter","load","remove","save"],
+          "search":["push","pop","search","filter","load","remove","save"],
+          "dashboard":["push","pop","search","filter","load","remove","save"],
+          "comment":["push","pop","search","filter","load","remove","save"],
+          "video":["push","pop","search","filter","load","remove","save"],
+          "image":["push","pop","search","filter","load","remove","save"],
+          "promotion":["push","pop","search","filter","load","remove","save"],
+          "equation":["push","pop","search","filter","load","remove","save"]
  },         
  "node":{
           "sell":{
+               "showNewsProducts",
+               "showPromotion",
+               "showHistories",
+               "showAds",
+               "pickUpProduct"
           },
           "catalog":{
-               
+                     "browseProduct",
+                     "searchProduct",
+                     "filterProduct",
+                     "pickUpProduct",
+                     "compareProduct"
                 
                  },
           "article":{
-          
+                   "browseArticle",
+                   "searchArtitle",
+                   "filter"
+
           },
           "view":{
           },
