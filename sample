@@ -7,9 +7,9 @@
   "Seudo problem":[["INITIAL",[["EQUAL",x,5],["NEVER_EQUAL",a,3]]],["SOLVE",["EQUATION",[EQUAL,x,["ADD",a,3]]]]]
   }
  "data":{
-    "entityProperties":{
-    "newEquation":"boolean",
+
     "equation":{
+    "newEquation"
     "equationId":"",
     "equationName":"",
     "equationDescription":"",
@@ -282,7 +282,7 @@
     "taskProcess",
     "taskDate"
     },
-    
+    "process":{
     "processId",
     "processName",
     "processStatus",
@@ -292,6 +292,8 @@
     "processIn",
     "processInput",
     "processDate"
+    },
+    "image":{
     "newImage",
     "imageId",
     "imageGallery",
@@ -308,7 +310,9 @@
     "imageSecret",
     "imageThumbnails",
     "imageDate",
-    "imageStatus",
+    "imageStatus"
+    },
+    "email":{
     "newEmail",
     "emailId",
     "emailTemplate",
@@ -323,7 +327,9 @@
     "emailSchedule",
     "emailHistory",
     "emailStatus",
-    "newVideo",
+    "newVideo"
+    }
+    "video":{
     "videoId",
     "videoTitle",
     "videoDuration",
@@ -334,7 +340,9 @@
     "videoRating"
     "videoComments",
     "videoDate",
-    "videoStatus",
+    "videoStatus"
+    },
+    "file":{
     "fileId",
     "fileTitle",
     "fileDuration",
@@ -345,7 +353,9 @@
     "fileRating"
     "fileComments",
     "fileDate",
-    "fileStatus",
+    "fileStatus"
+    },
+    "comment":{
     "newComment"
     "commentId",
     "commentTitle",
@@ -354,7 +364,9 @@
     "commentRating",
     "commentSort",
     "commentDate",
-    "commentStatus",
+    "commentStatus"
+    },
+    "category":{
     "categoryId",
     "categoryGroup",
     "categoryName",
@@ -362,6 +374,8 @@
     "categoryHistory",
     "categoryKeywords",
     "categoryTags"
+    },
+    "text":{
     "newText",
     "textId",
     "textData",
@@ -371,12 +385,17 @@
     "textCategory",
     "textKeyword",
     "textDate",
-    "textStatus",
+    "textStatus"
+    },
+    "property":{ 
     "propertyId",
     "propertyName",
     "propertyProcess",
     "propertyIn",
     "propertyOut"
+    },
+    "url":
+    {
     "newUrl",
     "urlId",
     "url",
@@ -385,7 +404,9 @@
     "urlCallBack",
     "urlJson",
     "urlService",
-    "urlList",
+    "urlList"
+    },
+    "api":{
     "newApi",
     "apiId",
     "apiName",
@@ -398,6 +419,8 @@
     "apiResponse",
     "apiErrors",
     "apiRequest",
+    },
+    "search":{
     "newSearch",
     "searchId",
     "searchStatus",
@@ -410,13 +433,16 @@
     "searchRequest",
     "searchResponse",
     "searchCallBack",
-    "searchUrl",
+    "searchUrl"
+    },
+    "dashboard":{
     "newDashboard",
     "dashboardId",
     "dashboardName",
     "dashboardSummary",
     "dashboardOutput",
-    "dashboardInput" 
+    "dashboardInput"
+    }
     },
     "entityType":{
            "alphaNumeric":"^[a-zA-Z0-9_ ]*$",
@@ -473,49 +499,41 @@
             "allow":"",
             "privilege":""
           },
- "sourceModel":{
- 
+ "methods":{
+       
  },         
  "node":{
           "sell":{
-               "showNewsProducts",
-               "showPromotion",
-               "showHistories",
-               "showAds",
-               "pickUpProduct"
+                "in":[],
+                "input":[],
+                methods:[],
+                "output":[],
+                "out":[]
           },
-          "catalog":{
-                     
-                     "browseProduct":[""],
-                     "browseCategory",
-                     "broseUsers",
-                     "searchProduct",
-                     "filterProduct",
-                     "pickUpProduct",
-                     "compareProduct",
-                     "viewProduct",
-                     "shareProduct",
-                     "applyPromotion"
-                     
-                
+          "catalog":{     
+                "in":[],
+                "input":[],
+                methods:[],
+                "output":[],
+                "out":[]
                  },
           "article":{
-                   "browseArticle",
-                   "searchArticle",
-                   "filterArticle"
+                "in":[],
+                "input":[],
+                methods:[],
+                "output":[],
+                "out":[]
 
           },
           "view":{
-                    "showProduct",
-                    "showProductRelated"
-                    "pickUpProduct",
-                    "applyPromotion",
-                    "compareProduct"
+                "in":[],
+                "input":[],
+                methods:[],
+                "output":[],
+                "out":[]    
           },
           "viewGroup":{
-                    "showProducts",
-                    "pickupProducts",
-                    "applyPromotion"
+     
           },
           "dashboard":{
               
