@@ -9,6 +9,7 @@
  "data":{
     "entityProperties":{
     "newEquation":"boolean",
+    "equation":{
     "equationId":"",
     "equationName":"",
     "equationDescription":"",
@@ -16,6 +17,8 @@
     "equationProcess":"",
     "equationState":"",
     "equationOutput":""
+    },
+    "account":{
     "newCccount":"boolean",
     "accountId":"entity",
     "accountName":"name",
@@ -49,6 +52,8 @@
     "accountStatus":"status",
     "accountDashboard":"entity",
     "accountPrivilegie":"allow",
+    },
+    user:{
     "newUser":"boolean",
     "userId":"entity",
     "userName":"name",
@@ -81,13 +86,17 @@
     "userGroup":"entity",
     "userStatus":"status",
     "userDashboard":"entity",
-    "userPrivilegie":"allow",
+    "userPrivilegie":"allow"
+    },
+    "group":{
     "newGroup",
     "groupId",
     "groupName"
     "groupPrivilege",
     "groupTag",
-    "groupCategory",
+    "groupCategory"
+    },
+    "address":{
     "newAddress":"boolean",
     "addressId",
     "addressName",
@@ -106,7 +115,9 @@
     "addressHighway",
     "addressCounty",
     "addressPhone",
-    "addressStatus",
+    "addressStatus"
+    },
+    "product":{
     "newProduct":"boolean",
     "productName":"alphaNumeric",
     "productDescription",
@@ -129,13 +140,17 @@
     "productStatus",
     "productRegion",
     "productAvail",
-    "productStock",
+    "productStock"
+    },
+    "tag":{
     "newTag",
     "tagId",
     "tagKeywords",
     "tagRelation",
     "tagCategory",
     "tagClients"
+    },
+    "service":{
     "newService",
     "serviceName",
     "serviceDescription",
@@ -158,7 +173,9 @@
     "serviceStatus",
     "serviceSchedule"
     "serviceAvaility",
-    "serviceRegion",
+    "serviceRegion"
+    },
+    "quote":{
     "newQuote",
     "quoteAds",
     "quoteSellers",
@@ -172,7 +189,9 @@
     "quoteShippings",
     "quotePayments",
     "quoteEvents",
-    "quoteStep",
+    "quoteStep"
+    },
+    "order":{
     "newOrder",
     "orderAds",
     "orderSellers",
@@ -185,7 +204,9 @@
     "orderShippings",
     "orderPayments",
     "orderEvents",
-    "orderStep", 
+    "orderStep"
+    },
+    "promotion":{
     "newPromotion",
     "promotionId",
     "promotionAds",
@@ -200,10 +221,14 @@
     "promotionDate",
     "promotionStart",
     "promotionEnd",
-    "newCourse",
+    },
+    "school":{
     "schoolId",
     "schoolName",
-    "schoolCarrer",
+    "schoolCarrer"
+    },
+    "course":{
+    "newCourse",
     "courseId",
     "courseName",
     "courseToken",
@@ -245,7 +270,9 @@
     "courseHistory",
     "courseParent",
     "courseSeller",
-    "courseDate",
+    "courseDate"
+    },
+    "task":{
     "newTask",
     "taskId",
     "taskTime",
@@ -253,7 +280,9 @@
     "taskToken",
     "taskSchedule",
     "taskProcess",
-    "taskDate",
+    "taskDate"
+    },
+    
     "processId",
     "processName",
     "processStatus",
@@ -445,34 +474,7 @@
             "privilege":""
           },
  "sourceModel":{
-          "category:["push","pop","search","filter","load","remove","save"],
-          "account":["push","pop","search","filter","load","remove","save"],
-          "user":["push","pop","search","filter","load","remove","save"],
-          "course":["push","pop","search","filter","load","remove","save"],
-          "quote":["push","pop","search","filter","load","remove","save"],
-          "order":["push","pop","search","filter","load","remove","save"],
-          "file":["push","pop","search","filter","load","remove","save"],
-          "order":["push","pop","search","filter","load","remove","save"],
-          "api":["push","pop","search","filter","load","remove","save"],
-          "url":["push","pop","search","filter","load","remove","save"],
-          "region":["push","pop","search","filter","load","remove","save"],
-          "language":["push","pop","search","filter","load","remove","save"],
-          "date":["push","pop","search","filter","load","remove","save"],
-          "search":["push","pop","search","filter","load","remove","save"],
-          "dashboard":["push","pop","search","filter","load","remove","save"],
-          "text":["push","pop","search","filter","load","remove","save"],
-          "email":["push","pop","search","filter","load","remove","save"],
-          "task":["push","pop","search","filter","load","remove","save"],
-          "course":["push","pop","search","filter","load","remove","save"],
-          "service":["push","pop","search","filter","load","remove","save"],
-          "product":["push","pop","search","filter","load","remove","save"],
-          "search":["push","pop","search","filter","load","remove","save"],
-          "dashboard":["push","pop","search","filter","load","remove","save"],
-          "comment":["push","pop","search","filter","load","remove","save"],
-          "video":["push","pop","search","filter","load","remove","save"],
-          "image":["push","pop","search","filter","load","remove","save"],
-          "promotion":["push","pop","search","filter","load","remove","save"],
-          "equation":["push","pop","search","filter","load","remove","save"]
+ 
  },         
  "node":{
           "sell":{
@@ -483,23 +485,40 @@
                "pickUpProduct"
           },
           "catalog":{
-                     "browseProduct",
+                     
+                     "browseProduct":[""],
+                     "browseCategory",
+                     "broseUsers",
                      "searchProduct",
                      "filterProduct",
                      "pickUpProduct",
-                     "compareProduct"
+                     "compareProduct",
+                     "viewProduct",
+                     "shareProduct",
+                     "applyPromotion"
+                     
                 
                  },
           "article":{
                    "browseArticle",
-                   "searchArtitle",
-                   "filter"
+                   "searchArticle",
+                   "filterArticle"
 
           },
           "view":{
+                    "showProduct",
+                    "showProductRelated"
+                    "pickUpProduct",
+                    "applyPromotion",
+                    "compareProduct"
+          },
+          "viewGroup":{
+                    "showProducts",
+                    "pickupProducts",
+                    "applyPromotion"
           },
           "dashboard":{
-          
+              
           },
           "quote":{
           
