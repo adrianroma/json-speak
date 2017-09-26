@@ -457,6 +457,10 @@
           "dashboard":{
           
           },
+          "quote":{
+          
+          },
+         
           "checkout":{
           
           },
@@ -473,12 +477,13 @@
           "register":{
           },
           "login":{
-          
-          
+         
           },
           "dashboardAdmin"
           ,
           "users":{
+          },
+          "payments":{
           },
           "inventory":{
           
