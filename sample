@@ -1,13 +1,5 @@
 {
-"simple":{
-  "Calculate this addition":["ADD",3,4,5,6,1],
-  "Calculate this operation":["ADD",["MULTIPLY",3,4,5,5],3,-4,5],
-  "Solve this":["EQUAL",["POWER",x,2],["ADD","x",2]],
-  "Who are you?":["TALK",["RESPONSE","My name is John"],["QUESTION","and you ?"],["HUMMOR","ha ha ha"]],
-  "Seudo problem":[["INITIAL",[["EQUAL",x,5],["NEVER_EQUAL",a,3]]],["SOLVE",["EQUATION",[EQUAL,x,["ADD",a,3]]]]]
-  }
  "data":{
-
     "equation":[
     "newEquation"
     "equationId":"",
@@ -498,25 +490,17 @@
             "allow":"\b^ALLOWED$\b|\b^DENIED$\b|\b^SUSPEND$\b",
             "privilege":"\b^FULL$\b|\b^SIMPLE$\b|\b^BASIC$\b|\b^MASTER$\b"
           },
+ 
  "methods":{
-       
+
  },         
  "node":{
-          "sell":[]
-          "catalog":[],
-                 
-          "article":[
-             
-
-                  ],
-          "view":[
-              ]
-          "viewGroup":[
-     
-          ],
-          "dashboard":{
-              
-          },
+          "sell":["showAds","checkUser","setTheme","logUser","registerUser"],
+          "catalog":["checkUser","setNameCatalog","showProducts","setTheme","logUser","registeUser"],       
+          "article":["checkUser","loginUser","setNameArticle","registerUser","showArticles","setTheme"],
+          "view":["checkUser","logUser","setNameView","registerUser","showProduct","setTheme"]
+          "viewGroup":["checkUser","setNameGroup,"showGroupProducts","setTheme","logUser","registeUser"],
+          "dashboard":["checkUser","setNameDash","showAccount","setTheme","logUser","registerUser"],
           "quote":{
           
           },
