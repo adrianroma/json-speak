@@ -492,7 +492,7 @@
           },
  
  "methods":{
-          "show":[],
+          "show":"",
           "check":"",
           "set":"",
           "push":"",
@@ -523,23 +523,23 @@
  },         
  "node":{
           "sell":["show","check"],
-          "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","set:user"],       
+          "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],       
           "article":["check:user","log:user","view:article",","show:articles","set:theme"],
           "view":["check:user","log:user","view:view","set:user","show:product","set:theme"]
-          "viewGroup":["check:user","view:productGroup","show:productGroup","set:theme","log:user","set:user"],
-          "dashboard":["checkUser","showDashBoard","setTheme","logUser","registerUser"],
-          "quote":["checkUser","showQuote","logUser","registerUser"],
-          "buy":["checkUser","showQuote","showPay","pay"],
-          "track:["checkUser,","showOrder","sendOrderStatus"],
-          "success":["checkUser","showOrder","sendOrderStatus"],
-          "register":["logUser","registerUser"],
-          "login":["logUser","registerUser"],
-          "dashboardAdmin"["checkUser","menuAdmin"],
-          "users":["showUsers","editUser"],
-          "payments":["showPayments","showPay"],
-          "inventory":["showProducts","editProduct","importProduct"],
-          "orders":["showOrders","editOrders","exportOrders"],
-          "clients":["showClients","editClients","importClients","exportClients"]
+          "viewGroup":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
+          "dashboard":["check:user","show:dashboard","set:theme","log:user","add:user"],
+          "quote":["check:user","show:quote","edit:quote","log:user","add:user"],
+          "buy":["check:user","show:quote",","show:pay","pay:quote"],
+          "track:["check:user,","show:order","send:order"],
+          "success":["check:user","show:order","send:order"],
+          "register":["check:user","log:user","add:user"],
+          "login":["log:user","add:user"],
+          "dashboardAdmin"["check:user","menu:admin"],
+          "users":["collection:user","edit:user"],
+          "payments":["collection:pay","edit:pay"],
+          "inventory":["collection:product","edit:product","import:product"],
+          "orders":["collection:order","edit:order","export:order"],
+          "clients":["collection:client","edit:client","import:client","export:client"]
  
  
  
