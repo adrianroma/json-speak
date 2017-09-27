@@ -500,7 +500,7 @@
           "article":["checkUser","loginUser","setNameArticle","registerUser","showArticles","setTheme"],
           "view":["checkUser","logUser","setNameView","registerUser","showProduct","setTheme"]
           "viewGroup":["checkUser","setNameGroup,"showGroupProducts","setTheme","logUser","registeUser"],
-          "dashboard":["checkUser","setNameDash","showAccount","setTheme","logUser","registerUser"],
+          "dashboard":["checkUser","showDashBoard","setTheme","logUser","registerUser"],
           "quote":{
           
           },
