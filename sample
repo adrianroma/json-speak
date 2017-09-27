@@ -492,52 +492,54 @@
           },
  
  "methods":{
-
+          "show":[],
+          "check":"",
+          "set":"",
+          "push":"",
+          "pop":"",
+          "section":"",
+          "log":"",
+          "edit":"",
+          "get":"",
+          "delete":"",
+          "collection":"",
+          "search":"",
+          "filter":"",
+          "register":""
+          "group":"",
+          "getValue":"",
+          "setValue":"",
+          "addValue":"",
+          "deleteValue":"",
+          "view":"",
+          "menu":"",
+          "import":"",
+          "export":"",
+          "send":"",
+          "entity":"",
+          "buy":"",
+          "pay":"",
+          "track":""
  },         
  "node":{
-          "sell":["showAds","checkUser","setTheme","logUser","registerUser"],
-          "catalog":["checkUser","setNameCatalog","showProducts","setTheme","logUser","registeUser"],       
-          "article":["checkUser","loginUser","setNameArticle","registerUser","showArticles","setTheme"],
-          "view":["checkUser","logUser","setNameView","registerUser","showProduct","setTheme"]
-          "viewGroup":["checkUser","setNameGroup,"showGroupProducts","setTheme","logUser","registeUser"],
+          "sell":["show","check"],
+          "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","set:user"],       
+          "article":["check:user","log:user","view:article",","show:articles","set:theme"],
+          "view":["check:user","log:user","view:view","set:user","show:product","set:theme"]
+          "viewGroup":["check:user","view:productGroup","show:productGroup","set:theme","log:user","set:user"],
           "dashboard":["checkUser","showDashBoard","setTheme","logUser","registerUser"],
-          "quote":{
-          
-          },
-         
-          "checkout":{
-          
-          },
-          "buy":{
-          
-          },
-          "track":{
-          
-          },
-          "success":{
-          
-          
-          },
-          "register":{
-          },
-          "login":{
-         
-          },
-          "dashboardAdmin"
-          ,
-          "users":[
-          [,
-          "payments":[
-           ],
-          "inventory":[
-          
-          ],
-          "orders":[
-          
-          ],
-          "clients":[
-          
-          ]
+          "quote":["checkUser","showQuote","logUser","registerUser"],
+          "buy":["checkUser","showQuote","showPay","pay"],
+          "track:["checkUser,","showOrder","sendOrderStatus"],
+          "success":["checkUser","showOrder","sendOrderStatus"],
+          "register":["logUser","registerUser"],
+          "login":["logUser","registerUser"],
+          "dashboardAdmin"["checkUser","menuAdmin"],
+          "users":["showUsers","editUser"],
+          "payments":["showPayments","showPay"],
+          "inventory":["showProducts","editProduct","importProduct"],
+          "orders":["showOrders","editOrders","exportOrders"],
+          "clients":["showClients","editClients","importClients","exportClients"]
  
  
  
