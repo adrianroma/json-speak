@@ -495,6 +495,7 @@
           "show":"",
           "check":"",
           "set":"",
+          "add":""
           "push":"",
           "pop":"",
           "section":"",
@@ -516,13 +517,16 @@
           "import":"",
           "export":"",
           "send":"",
-          "entity":"",
-          "buy":"",
-          "pay":"",
-          "track":""
+          "pay":""
  },         
  "node":{
-          "sell":["show","check"],
+          "sell":{
+                  "in":["internet","catalog","view","viewGroup","quote"],
+                  "input":[],
+                  "process":["show:ads","check:user","log:user","add:user"],
+                  "output":[],
+                  "out":["catalog","view","quote"]
+                  },
           "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],       
           "article":["check:user","log:user","view:article",","show:articles","set:theme"],
           "view":["check:user","log:user","view:view","set:user","show:product","set:theme"]
