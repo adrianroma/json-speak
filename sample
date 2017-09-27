@@ -8,7 +8,7 @@
   }
  "data":{
 
-    "equation":{
+    "equation":[
     "newEquation"
     "equationId":"",
     "equationName":"",
@@ -17,87 +17,87 @@
     "equationProcess":"",
     "equationState":"",
     "equationOutput":""
-    },
-    "account":{
-    "newCccount":"boolean",
-    "accountId":"entity",
-    "accountName":"name",
-    "accountEmail":"email",
-    "accountSocial":"nick",
-    "accountUrls":"url",
-    "accountMap":["geoLat","geolog"],
-    "accountPassword":["password"],
-    "accountToken":"token",
-    "accountPhone":"mobile",
-    "accountImage":"imageFormat",
-    "accountImages"["imageFormat","imageFormat","imageFormat"],
-    "accountDescription":"text",
-    "accountCategory":"alphaNumeric",
-    "accountTitles":"word",
-    "accountLastName":"name",
-    "accountFinalName":"name"
-    "accountAddress":"entity",
-    "accountPayments":"entity",
-    "accountCurrency":"currency",
-    "accountLanguage":"language",
-    "accountBalance":"entity",
-    "accountBook":"entity",
-    "accountClient":"entity",
-    "accountShipping":"entity",
-    "accountFriend":"entity",
-    "accountTask":"entity",
-    "accountSchedule":"schedule",
-    "accountStore":"entity",
-    "accountGroup":"entity",
-    "accountStatus":"status",
-    "accountDashboard":"entity",
-    "accountPrivilegie":"allow",
-    },
-    user:{
-    "newUser":"boolean",
-    "userId":"entity",
-    "userName":"name",
-    "userEmail":"email",
-    "userSocial":"nick",
+    ],
+    "account":[
+    "newCccount"
+    "accountId"
+    "accountName"
+    "accountEmail"
+    "accountSocial"
+    "accountUrls"
+    "accountMap":
+    "accountPassword":
+    "accountToken"
+    "accountPhone"
+    "accountImage"
+    "accountImages"
+    "accountDescription",
+    "accountCategory":,
+    "accountTitles",
+    "accountLastName",
+    "accountFinalName",
+    "accountAddress",
+    "accountPayments",
+    "accountCurrency",
+    "accountLanguage",
+    "accountBalance",
+    "accountBook",
+    "accountClient",
+    "accountShipping",
+    "accountFriend":,
+    "accountTask",
+    "accountSchedule",
+    "accountStore",
+    "accountGroup":"entity,
+    "accountStatus",
+    "accountDashboard",
+    "accountPrivilegie",
+    ],
+    user:[
+    "newUser",
+    "userId",
+    "userName",
+    "userEmail",
+    "userSocial",
     "userUrls":"url",
-    "userMap":["geoLat","geolog"],
-    "userPassword":["password"],
-    "userToken":"token",
-    "userPhone":"mobile",
-    "userImage":"imageFormat",
-    "userImages"["imageFormat","imageFormat","imageFormat"],
-    "userDescription":"text",
-    "userCategory":"alphaNumeric",
-    "userTitles":"word",
-    "userLastName":"name",
-    "userFinalName":"name"
-    "userAddress":"entity",
-    "userPayments":"entity",
-    "userCurrency":"currency",
-    "userLanguage":"language",
-    "userBalance":"entity",
-    "userBook":"entity",
-    "userClient":"entity",
-    "userShipping":"entity",
-    "userFriend":"entity",
-    "userTask":"entity",
-    "userSchedule":"schedule",
-    "userStore":"entity",
-    "userGroup":"entity",
-    "userStatus":"status",
-    "userDashboard":"entity",
-    "userPrivilegie":"allow"
-    },
-    "group":{
-    "newGroup",
-    "groupId",
-    "groupName"
-    "groupPrivilege",
+    "userMap",
+    "userPassword",
+    "userToken",
+    "userPhone",
+    "userImage",
+    "userImages",
+    "userDescription",
+    "userCategory",
+    "userTitles",
+    "userLastName",
+    "userFinalName",
+    "userAddress",
+    "userPayments",
+    "userCurrency",
+    "userLanguage",
+    "userBalance",
+    "userBook",
+    "userClient",
+    "userShipping",
+    "userFriend",
+    "userTask",
+    "userSchedule",
+    "userStore",
+    "userGroup",
+    "userStatus",
+    "userDashboard",
+    "userPrivilegie""
+    ],
+    "group":[
+    "newGroup":"boolean",
+    "groupId":"entity",
+    "groupName":"name"
+    "groupPrivilege":"allow",
     "groupTag",
     "groupCategory"
-    },
-    "address":{
-    "newAddress":"boolean",
+    ],
+    "address":[
+    "newAddress",
     "addressId",
     "addressName",
     "addressStreet",
@@ -116,10 +116,10 @@
     "addressCounty",
     "addressPhone",
     "addressStatus"
-    },
-    "product":{
-    "newProduct":"boolean",
-    "productName":"alphaNumeric",
+    ],
+    "product":[
+    "newProduct",
+    "productName",
     "productDescription",
     "productArticle",
     "productSku",
@@ -141,16 +141,16 @@
     "productRegion",
     "productAvail",
     "productStock"
-    },
-    "tag":{
+    ],
+    "tag":[
     "newTag",
     "tagId",
     "tagKeywords",
     "tagRelation",
     "tagCategory",
     "tagClients"
-    },
-    "service":{
+    ],
+    "service":[
     "newService",
     "serviceName",
     "serviceDescription",
@@ -174,8 +174,8 @@
     "serviceSchedule"
     "serviceAvaility",
     "serviceRegion"
-    },
-    "quote":{
+    ],
+    "quote":[
     "newQuote",
     "quoteAds",
     "quoteSellers",
@@ -190,8 +190,8 @@
     "quotePayments",
     "quoteEvents",
     "quoteStep"
-    },
-    "order":{
+    ],
+    "order":[
     "newOrder",
     "orderAds",
     "orderSellers",
@@ -205,8 +205,8 @@
     "orderPayments",
     "orderEvents",
     "orderStep"
-    },
-    "promotion":{
+    ],
+    "promotion":[
     "newPromotion",
     "promotionId",
     "promotionAds",
@@ -221,13 +221,13 @@
     "promotionDate",
     "promotionStart",
     "promotionEnd",
-    },
-    "school":{
+    ],
+    "school":[
     "schoolId",
     "schoolName",
     "schoolCarrer"
-    },
-    "course":{
+    ],
+    "course":[
     "newCourse",
     "courseId",
     "courseName",
@@ -271,8 +271,8 @@
     "courseParent",
     "courseSeller",
     "courseDate"
-    },
-    "task":{
+    ],
+    "task":[
     "newTask",
     "taskId",
     "taskTime",
@@ -281,8 +281,8 @@
     "taskSchedule",
     "taskProcess",
     "taskDate"
-    },
-    "process":{
+    ],
+    "process":[
     "processId",
     "processName",
     "processStatus",
@@ -292,8 +292,8 @@
     "processIn",
     "processInput",
     "processDate"
-    },
-    "image":{
+    ],
+    "image":[
     "newImage",
     "imageId",
     "imageGallery",
@@ -311,8 +311,8 @@
     "imageThumbnails",
     "imageDate",
     "imageStatus"
-    },
-    "email":{
+    ],
+    "email":[
     "newEmail",
     "emailId",
     "emailTemplate",
@@ -328,8 +328,8 @@
     "emailHistory",
     "emailStatus",
     "newVideo"
-    }
-    "video":{
+    ]
+    "video":[
     "videoId",
     "videoTitle",
     "videoDuration",
@@ -341,8 +341,8 @@
     "videoComments",
     "videoDate",
     "videoStatus"
-    },
-    "file":{
+    ],
+    "file":[
     "fileId",
     "fileTitle",
     "fileDuration",
@@ -354,8 +354,8 @@
     "fileComments",
     "fileDate",
     "fileStatus"
-    },
-    "comment":{
+    ],
+    "comment":[
     "newComment"
     "commentId",
     "commentTitle",
@@ -365,8 +365,8 @@
     "commentSort",
     "commentDate",
     "commentStatus"
-    },
-    "category":{
+    ],
+    "category":[
     "categoryId",
     "categoryGroup",
     "categoryName",
@@ -374,8 +374,8 @@
     "categoryHistory",
     "categoryKeywords",
     "categoryTags"
-    },
-    "text":{
+    ],
+    "text":[
     "newText",
     "textId",
     "textData",
@@ -386,16 +386,16 @@
     "textKeyword",
     "textDate",
     "textStatus"
-    },
-    "property":{ 
+    ],
+    "property":[
     "propertyId",
     "propertyName",
     "propertyProcess",
     "propertyIn",
     "propertyOut"
-    },
+    ],
     "url":
-    {
+    [
     "newUrl",
     "urlId",
     "url",
@@ -405,8 +405,8 @@
     "urlJson",
     "urlService",
     "urlList"
-    },
-    "api":{
+    ],
+    "api":[
     "newApi",
     "apiId",
     "apiName",
@@ -419,8 +419,8 @@
     "apiResponse",
     "apiErrors",
     "apiRequest",
-    },
-    "search":{
+    ],
+    "search":[
     "newSearch",
     "searchId",
     "searchStatus",
@@ -434,15 +434,15 @@
     "searchResponse",
     "searchCallBack",
     "searchUrl"
-    },
-    "dashboard":{
+    ],
+    "dashboard":[
     "newDashboard",
     "dashboardId",
     "dashboardName",
     "dashboardSummary",
     "dashboardOutput",
     "dashboardInput"
-    }
+    ]
     },
     "entityType":{
            "alphaNumeric":"^[a-zA-Z0-9_ ]*$",
@@ -462,79 +462,58 @@
             "mobile":"",
             "password":"^[a-z0-9_-]{6,18}$",
             "boolean":"\b^TRUE$\b|\b^FALSE\b",
-            "token":"",
+            "token":"^(?:[1-9]|0[1-9]|10)$",
             "lowerCase":"^[a-z]*$",
             "uperCase":"^[A-Z]*$",
             "slug":"^[a-z0-9-]+$",
             "entity":"^[a-z0-9"."]+$",
-            "variable":"",
+            "variable":"^(?:[1-9]|0[1-9]|10)$",
             "name":"^[A-Z]'?[- a-zA-Z]([a-zA-Z])*$",
             "date":"^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$",
             "time":"^([1-9]|[1-2][0-4]|24|all)[":"]([1-9]|[1-5][0-9]|60|all)[":"]([1-9]|[1-5][0-9]|60|all)$",
-            "schedule":"",
-            "language":"",
-            "sku":"",
-            "token":"",
+            "days":"?:mon|tue|wed|thu|fri|sat|sun)(?:, )?)(?1)*$",
+            "language":"\b^ES$\b|\b^EN$\b|\b^FR$\b",
+            "sku":"^(?:[1-9]|0[1-9]|10)$",
             "ip":"\b(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\b",
-            "query":"",
+            "query":"^(?:[1-9]|0[1-9]|10)$",
             "status":"\b^TRUE$\b|\b^FALSE$\b|\b^NULL$\b|\b^EQUAL$\b|\b^NOT_EQUAL$\b|\b^ALMOST_EQUAL$\b|\b^ORDERED$\b|\b^GREATER_THAN$\b|\b^LESS_THAN$\b|\b^REPEAT$\b|\b^LOST$\b",
             "state":"\b^enabled$\b|\b^disabled$\b|\b^changing$\b|\b^paused$\b|\b^reloading$\b|\b^error$\b",
             "numberId":"^[0-9"."]*$",
             "entity":"^[0-9a-zA-Z"."]*$"
-            "orderId":"",
-            "quoteId":"",
-            "accountId:"",
-            "storeId":"",
-            "userId":"",
+            "orderId":"^(?:[1-9]|0[1-9]|10)$",
+            "quoteId":"^(?:[1-9]|0[1-9]|10)$",
+            "accountId:"^(?:[1-9]|0[1-9]|10)$",
+            "storeId":"^(?:[1-9]|0[1-9]|10)$",
+            "userId":"^(?:[1-9]|0[1-9]|10)$",
             "position":"\b^up$\b|\b^down$\b|\b^left$\b|\b^right$\b",
             "url":"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$",
             "html_tag":"^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$",
-            "imageFormat":"",
+            "imageFormat":"^[0-9a-zA-Z]*["."][j][p][g]$",
             "soundFormat":"^[0-9a-zA-Z]*["."][m][p][3]$",
-            "fileFormat":"",
-            "creditCard":"",
-            "operation":"",
+            "fileFormat":"^[0-9a-zA-Z]*["."][p][d][f]$",
+            "creditCard":"^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$",
+            "operation":"^(?:[1-9]|0[1-9]|10)$",
             "geoLat":"^[9][0]["."][0]{1,3}$)|(^[1-8][0-9]["."][0-9]{1,3}$)|(^[0-9]["."][0-9]{1,3}$",
             "geoLog":"([1][8][0]["."][0][0][0])|(^[1][0-7][0-9]["."][0-9]{1,3}$)|(^[0-9]{1,2}["."][0-9]{0,3}$)",
-            "allow":"",
-            "privilege":""
+            "allow":"\b^ALLOWED$\b|\b^DENIED$\b|\b^SUSPEND$\b",
+            "privilege":"\b^FULL$\b|\b^SIMPLE$\b|\b^BASIC$\b|\b^MASTER$\b"
           },
  "methods":{
        
  },         
  "node":{
-          "sell":{
-                "in":[],
-                "input":[],
-                methods:[],
-                "output":[],
-                "out":[]
-          },
-          "catalog":{     
-                "in":[],
-                "input":[],
-                methods:[],
-                "output":[],
-                "out":[]
-                 },
-          "article":{
-                "in":[],
-                "input":[],
-                methods:[],
-                "output":[],
-                "out":[]
+          "sell":[]
+          "catalog":[],
+                 
+          "article":[
+             
 
-          },
-          "view":{
-                "in":[],
-                "input":[],
-                methods:[],
-                "output":[],
-                "out":[]    
-          },
-          "viewGroup":{
+                  ],
+          "view":[
+              ]
+          "viewGroup":[
      
-          },
+          ],
           "dashboard":{
               
           },
@@ -562,19 +541,19 @@
           },
           "dashboardAdmin"
           ,
-          "users":{
-          },
-          "payments":{
-          },
-          "inventory":{
+          "users":[
+          [,
+          "payments":[
+           ],
+          "inventory":[
           
-          },
-          "orders":{
+          ],
+          "orders":[
           
-          },
-          "clients":{
+          ],
+          "clients":[
           
-          }
+          ]
  
  
  
