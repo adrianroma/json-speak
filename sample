@@ -1,4 +1,19 @@
 {
+ "variables":{
+     "name":"name",
+     "email":"email",
+     "password":"password",
+     "category":"name",
+     "url":"",
+     "input":"",
+     "output":"",
+     "phone":"",
+     "image":"",
+     "language":"",
+     "description":"",
+     "text":"",
+     "token":""
+ },
  "data":{
     "equation":[
     "newEquation"
@@ -493,8 +508,8 @@
  
  "methods":{
           "show":{
-                  "input":[],
-                  "output":[]
+                  "input":["entity"],
+                  "output":["object"]
                   },
           "check":{
                   "input":[],
