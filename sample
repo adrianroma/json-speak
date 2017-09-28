@@ -608,65 +608,129 @@
  "node":{
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
-                  "process":["show:ads","check:user","log:user","add:use"]
-                  "out":["catalog","view","quote"]
+                  "input":[],
+                  "process":["show:ads","check:user","log:user","add:use"],
+                  "out":["catalog","view","quote"],
+                  "output":[]
                   },
           "catalog":{
-                    "in":[],  
-                    "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"]
+                    "in":[],
+                    "input":[],
+                    "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],
+                    "out":[],
+                    "output":[]
                     },       
           "article":{
-                    "in":[],  
-                    "process":["check:user","log:user","view:article",","show:articles","set:theme"]
+                    "in":[], 
+                    "input":[],
+                    "process":["check:user","log:user","view:article",","show:articles","set:theme"],
+                    "out":[],
+                    "output":[]
                     },
           "view":{
-                 "in":[],   
-                 "process":["check:user","log:user","view:view","set:user","show:product","set:theme"]
+                 "in":[],
+                 "input":[],
+                 "process":["check:user","log:user","view:view","set:user","show:product","set:theme"],
+                 "out":[],
+                    "output":[]
                  },
           "viewGroup":{
-                 "in":[],    
-                 "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"]
+                 "in":[],
+                 "input":[],
+                 "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
+                 "out":[],
+                    "output":[]
                  },
           "dashboard":{
                    "in":[],     
-                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"]
+                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
+                    "out":[],
+                    "output":[]
                     },
           "quote":{
-                   "in":[],  
-                   "process":["check:user","show:quote","edit:quote","log:user","add:user"]
+                   "in":[],
+                   "input":[],
+                   "process":["check:user","show:quote","edit:quote","log:user","add:user"],
+                   "out":[],
+                    "output":[]
                   },
           "buy":{
-                  "process":["check:user","show:quote",","show:pay","pay:quote"]
+                  "in":[],
+                  "input":[],
+                  "process":["check:user","show:quote",","show:pay","pay:quote"],
+                  "out":[],
+                    "output":[]
                   },
           "track:{
-                  "process":["check:user,","show:order","send:order"]
+                  "in":[],
+                  "input":[],
+                  "process":["check:user,","show:order","send:order"],
+                  "out":[],
+                    "output":[]
                   },
           "success":{
-                  "process":["check:user","show:order","send:order"]
+                  "in":[],
+                  "input":[],
+                  "process":["check:user","show:order","send:order"],
+                  "out":[],
+                    "output":[]
                   },
           "register":{
-                  "process":["check:user","log:user","add:user"]
+                  "in":[],
+                  "process":["check:user","log:user","add:user"],
+                  "out":[],
+                    "output":[]
                   },
           "login":{
-                  "process":["log:user","add:user"]
+                  "in":[],
+                  "input":[],
+                  "process":["log:user","add:user"],
+                  "out":[],
+                  "out":[],
+                    "output":[]
                   },
           "dashboardAdmin":{
-                           "process":["check:user","menu:admin"]
+                           "in":[],
+                           "input":[],
+                           "process":["check:user","menu:admin"],
+                            "out":[],
+                            "output":[]
+                           
                            },
           "users":{
-                   "process":["collection:user","edit:user"]
+                   "in":[],
+                   "input":[],
+                   "process":["collection:user","edit:user"],
+                   "out":[],
+                    "output":[]
                    },
           "payments":{
-                    "process":["collection:pay","edit:pay"]
+                    "in":[],
+                    "input":[],
+                    "process":["collection:pay","edit:pay"],
+                    "out":[],
+                    "output":[]
                     },
           "inventory":{
-                      "process":["collection:product","edit:product","import:product"]
+                      "in":[],
+                      "input":[],
+                      "process":["collection:product","edit:product","import:product"],
+                     "out":[],
+                    "output":[]
                       },
           "orders":{
-                 "process":["collection:order","edit:order","export:order"]
+                 "in":[],
+                 "input":[],
+                 "process":["collection:order","edit:order","export:order"],
+                 "out":[],
+                    "output":[]
                  },
           "clients":{
-                 "process":["collection:client","edit:client","import:client","export:client"]
+                 "in":[], 
+                 "input":[],
+                 "process":["collection:client","edit:client","import:client","export:client"],
+                 "out":[],
+                 "output":[]
                  }
  
  
