@@ -608,9 +608,7 @@
  "node":{
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
-                  "input":["user"],
-                  "process":["show:ads","check:user","log:user","add:user"],
-                  "output":["user","quote"],
+                  "process":["show:ads","check:user","log:user","add:use"]
                   "out":["catalog","view","quote"]
                   },
           "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],       
