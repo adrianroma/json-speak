@@ -610,22 +610,22 @@
                   "in":["internet","catalog","view","viewGroup","quote"],
                   "input":[],
                   "process":["show:ads","check:user","log:user","add:use"],
-                  "out":["catalog","view","quote"],
+                  "out":["catalog","view","viewGroup","quote"],
                   "output":[]
                   },
           "catalog":{
-                    "in":[],
+                    "in":["internet","catalog","view","viewGroup","quote"],
                     "input":[],
                     "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],
                     "out":[],
-                    "output":[]
+                    "output":["view","article","quote","viewGroup","catalog"]
                     },       
           "article":{
-                    "in":[], 
+                    "in":["internet","catalog","view","viewgroup"], 
                     "input":[],
                     "process":["check:user","log:user","view:article",","show:articles","set:theme"],
                     "out":[],
-                    "output":[]
+                    "output":["catalog","view","viewGroup"]
                     },
           "view":{
                  "in":[],
