@@ -612,19 +612,27 @@
                   "out":["catalog","view","quote"]
                   },
           "catalog":{
+                    "in":[],  
                     "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"]
                     },       
           "article":{
+                    "in":[],  
                     "process":["check:user","log:user","view:article",","show:articles","set:theme"]
                     },
           "view":{
+                 "in":[],   
                  "process":["check:user","log:user","view:view","set:user","show:product","set:theme"]
                  },
           "viewGroup":{
+                 "in":[],    
                  "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"]
                  },
-          "dashboard":{"process":["check:user","show:dashboard","set:theme","log:user","add:user"]},
+          "dashboard":{
+                   "in":[],     
+                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"]
+                    },
           "quote":{
+                   "in":[],  
                    "process":["check:user","show:quote","edit:quote","log:user","add:user"]
                   },
           "buy":{
