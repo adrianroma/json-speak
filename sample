@@ -611,23 +611,55 @@
                   "process":["show:ads","check:user","log:user","add:use"]
                   "out":["catalog","view","quote"]
                   },
-          "catalog":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],       
-          "article":["check:user","log:user","view:article",","show:articles","set:theme"],
-          "view":["check:user","log:user","view:view","set:user","show:product","set:theme"]
-          "viewGroup":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
-          "dashboard":["check:user","show:dashboard","set:theme","log:user","add:user"],
-          "quote":["check:user","show:quote","edit:quote","log:user","add:user"],
-          "buy":["check:user","show:quote",","show:pay","pay:quote"],
-          "track:["check:user,","show:order","send:order"],
-          "success":["check:user","show:order","send:order"],
-          "register":["check:user","log:user","add:user"],
-          "login":["log:user","add:user"],
-          "dashboardAdmin"["check:user","menu:admin"],
-          "users":["collection:user","edit:user"],
-          "payments":["collection:pay","edit:pay"],
-          "inventory":["collection:product","edit:product","import:product"],
-          "orders":["collection:order","edit:order","export:order"],
-          "clients":["collection:client","edit:client","import:client","export:client"]
+          "catalog":{
+                    "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"]
+                    },       
+          "article":{
+                    "process":["check:user","log:user","view:article",","show:articles","set:theme"]
+                    },
+          "view":{
+                 "process":["check:user","log:user","view:view","set:user","show:product","set:theme"]
+                 },
+          "viewGroup":{
+                 "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"]
+                 },
+          "dashboard":{"process":["check:user","show:dashboard","set:theme","log:user","add:user"]},
+          "quote":{
+                   "process":["check:user","show:quote","edit:quote","log:user","add:user"]
+                  },
+          "buy":{
+                  "process":["check:user","show:quote",","show:pay","pay:quote"]
+                  },
+          "track:{
+                  "process":["check:user,","show:order","send:order"]
+                  },
+          "success":{
+                  "process":["check:user","show:order","send:order"]
+                  },
+          "register":{
+                  "process":["check:user","log:user","add:user"]
+                  },
+          "login":{
+                  "process":["log:user","add:user"]
+                  },
+          "dashboardAdmin":{
+                           "process":["check:user","menu:admin"]
+                           },
+          "users":{
+                   "process":["collection:user","edit:user"]
+                   },
+          "payments":{
+                    "process":["collection:pay","edit:pay"]
+                    },
+          "inventory":{
+                      "process":["collection:product","edit:product","import:product"]
+                      },
+          "orders":{
+                 "process":["collection:order","edit:order","export:order"]
+                 },
+          "clients":{
+                 "process":["collection:client","edit:client","import:client","export:client"]
+                 }
  
  
  
