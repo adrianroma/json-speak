@@ -510,80 +510,81 @@
  
  "methods":{
           "show":{
-                  "input":["entity"],
-                  "output":["object"]
+                  "input":["collectionId","entityId"],
+                  "output":["entity"]
                   },
           "check":{
-                  "input":[],
-                   "output":[]
+                  "input":["collectionId","entityId"],
+                   "output":["boolean"]
           },
           "set":{
-                   "input":[],
-                   "output":[]
+                   "input":["collectionId","entityId","variable","value"],
+                   "output":["boolean"]
+          },
+           "get":{
+                   "input":["collectionId","entityId","variable"],
+                  "output":["value"]
+          },
+          "delete":{
+                   "input":["collectionId","entityId"],
+                  "output":["boolean"]
           },
           "add":{
-                  "input":[],
-                  "output":[]
+                  "input":["collectionId","entity"],
+                  "output":["boolean"]
           },
           "push":{
-                   "input":[],
-                   "output":[]
+                   "input":["collectionId","entity","sort"],
+                   "output":["boolean"]
           },
           "pop":{
-                   "input":[],
-                   "output":[]
+                   "input":["collectionId","sort"],
+                   "output":["entity"]
           },
           "section":{
                   "input":[],
                   "output":[]
           },
           "log":{
-                  "input":[],
-                  "output":[]
+                  "input":["collectionId","entity","token"],
+                  "output":["boolean","token","goId"]
           },
           "edit":{
-                   "input":[],
-                  "output":[] 
+                   "input":["entity"],
+                   "output":["entity"] 
                   },
-          "get":{
-                   "input":[],
-                  "output":[]
-          },
-          "delete":{
-                   "input":[],
-                  "output":[]
-          },
+         
           "collection":{
-                    "input":[],
-                    "output":[]
+                    "input":["collectionId"],
+                    "output":["collection"]
            },
           "search":{
-                  "input":[],
-                  "output":[]
+                  "input":["collectionId","variable","like"],
+                  "output":["collection"]
           },
           "filter":{
-                   "input":[],
+                   "input":["collectionId","variable","by"],
                   "output":[]
           },
           "register":{
-                  "input":[],
-                  "output":[]
+                  "input":["collectionId","entity","token"],
+                  "output":["boolean","token","goId"]
           },
           "group":{
-                  "input":[],
-                  "output":[]
+                  "input":["entityId","entityId"],
+                  "output":["boolean"]
           },
           "getValue":{
-                  "input":[],
-                  "output":[]
+                  "input":["entityId","variable"],
+                  "output":["value"]
           },
           "setValue":{
-                  "input":[],
-                  "output":[]
+                  "input":["entityId","variable","value"],
+                  "output":["boolean"]
           },
           "addValue":{
-                  "input":[],
-                  "output":[]
+                  "input":["entityId","variable"],
+                  "output":["boolean"]
           },
           "deleteValue":{
                   "input":[],
@@ -645,52 +646,52 @@
                     "output":["catalog","view","viewGroup"]
                     },
           "view":{
-                 "in":[],
+                 "in":["article","catalog,","sell","quote"],
                  "input":[],
                  "process":["check:user","log:user","view:view","set:user","show:product","set:theme"],
                  "out":[],
                     "output":[]
                  },
           "viewGroup":{
-                 "in":[],
+                 "in":["article","catalog,","sell","quote"],
                  "input":[],
                  "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
                  "out":[],
                     "output":[]
                  },
           "dashboard":{
-                   "in":[],     
+                   "in":["login"],     
                     "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
                     "out":[],
-                    "output":[]
+                    "output":[""]
                     },
           "quote":{
-                   "in":[],
+                   "in":["article","catalog","sell","quote"],
                    "input":[],
                    "process":["check:user","show:quote","edit:quote","log:user","add:user"],
                    "out":[],
                     "output":[]
                   },
           "buy":{
-                  "in":[],
+                  "in":["article","catalog","viewGroup","sell","quote"],
                   "input":[],
                   "process":["check:user","show:quote",","show:pay","pay:quote"],
                   "out":[],
-                    "output":[]
+                    "output":["track"]
                   },
           "track:{
-                  "in":[],
+                  "in":["buy"],
                   "input":[],
                   "process":["check:user,","show:order","send:order"],
                   "out":[],
                     "output":[]
                   },
           "success":{
-                  "in":[],
+                  "in":["track"],
                   "input":[],
                   "process":["check:user","show:order","send:order"],
                   "out":[],
-                    "output":[]
+                    "output":["catalog"]
                   },
           "register":{
                   "in":[],
