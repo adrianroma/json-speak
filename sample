@@ -684,10 +684,10 @@
                    "input":[],
                    "process":["check:user","show:quote","edit:quote","log:user","add:user"],
                    "out":[],
-                    "output":[]
+                    "output":["buy"]
                   },
           "buy":{
-                  "in":["article","catalog","viewGroup","sell","quote"],
+                  "in":["quote"],
                   "input":[],
                   "process":["check:user","show:quote",","show:pay","transform:quote"],
                   "out":[],
@@ -698,7 +698,7 @@
                   "input":[],
                   "process":["check:user,","show:order","send:order"],
                   "out":[],
-                    "output":[]
+                    "output":["success"]
                   },
           "success":{
                   "in":["track"],
@@ -708,25 +708,25 @@
                     "output":["catalog"]
                   },
           "register":{
-                  "in":[],
+                  "in":["catalog","view","sell","viewGroup"],
                   "process":["check:user","log:user","add:user"],
                   "out":[],
                     "output":[]
                   },
           "login":{
-                  "in":[],
+                  "in":["catalog","view","sell","viewGroup"],
                   "input":[],
                   "process":["log:user","add:user"],
                   "out":[],
                   "out":[],
-                    "output":[]
+                  "output":["dashboard"]
                   },
           "dashboardAdmin":{
                            "in":[],
                            "input":[],
                            "process":["check:user","menu:admin"],
                             "out":[],
-                            "output":[]
+                            "output":["users","payments","inventory","orders"]
                            
                            },
           "users":{
