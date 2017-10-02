@@ -1,4 +1,7 @@
 {
+ "constant":{
+ 
+ },
  "variables":{
      "name":"name",
      "email":"email",
@@ -454,9 +457,15 @@
     "dashboardOutput",
     "dashboardInput"
     ],
-    "numeric"
+    "numeric":[
+     "newNumeric",
+     "numericName",
+     "numericId",
+     "numericInput",
+     "numericOutput"
+     ]
     }, 
-    "object":{
+    "list":{
     
     
     },
