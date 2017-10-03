@@ -16,10 +16,20 @@
      "description":"text",
      "text":"text",
      "token":"alphanumeric",
-     "id":"entity"
+     "id":"entity",
+     "relation":"entity"
  },
  "arrays":{
-      
+       "register":[],
+       "login":[],
+       "catalog":[],
+       "viewProduct":[],
+       "comment":[],
+       "entities":[],
+       "users":[],
+       "products":[],
+       "groups":[],
+       "categories":[]
  },
  "entity":{
     "equation":[
