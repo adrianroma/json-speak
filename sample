@@ -649,7 +649,7 @@
  "node":{
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
-                  "input":[],
+                  "input":[""],
                   "process":["show:ads","check:user","log:user","add:use"],
                   "out":["catalog","view","viewGroup","quote"],
                   "output":[]
@@ -679,98 +679,97 @@
                  "in":["article","catalog,","sell","quote"],
                  "input":[],
                  "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
-                 "out":[],
+                 "out":["quote","article","catalog","sell"],
                     "output":[]
                  },
           "dashboard":{
                    "in":["login"],     
                     "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
                     "out":[],
-                    "output":[""]
+                    "output":[]
                     },
           "quote":{
                    "in":["article","catalog","sell","quote"],
                    "input":[],
                    "process":["check:user","show:quote","edit:quote","log:user","add:user"],
-                   "out":[],
-                    "output":["buy"]
+                   "out":["buy"],
+                    "output":[]
                   },
           "buy":{
                   "in":["quote"],
                   "input":[],
                   "process":["check:user","show:quote",","show:pay","transform:quote"],
-                  "out":[],
-                    "output":["track"]
+                  "out":["track"],
+                    "output":[]
                   },
           "track:{
                   "in":["buy"],
                   "input":[],
                   "process":["check:user,","show:order","send:order"],
-                  "out":[],
-                    "output":["success"]
+                  "out":["success"],
+                    "output":[]
                   },
           "success":{
                   "in":["track"],
                   "input":[],
                   "process":["check:user","show:order","send:order"],
-                  "out":[],
-                    "output":["catalog"]
+                  "out":["catalog"],
+                    "output":[]
                   },
           "register":{
                   "in":["catalog","view","sell","viewGroup"],
                   "process":["check:user","log:user","add:user"],
-                  "out":[],
+                  "out":["login"],
                     "output":[]
                   },
           "login":{
-                  "in":["catalog","view","sell","viewGroup"],
-                  "input":[],
+                  "in":["catalog","view","sell","viewGroup","quote"],
+                  "input":["catalog","register","internet",""],
                   "process":["log:user","add:user"],
-                  "out":[],
-                  "out":[],
-                  "output":["dashboard"]
+                  "out":["dashboard"],
+                  "output":["token"]
                   },
           "dashboardAdmin":{
-                           "in":[],
-                           "input":[],
+                           "in":["login"],
+                           "input":[""],
                            "process":["check:user","menu:admin"],
-                            "out":[],
-                            "output":["users","payments","inventory","orders"]
+                            "out":["users","payments","inventory","orders"],
+                            "output":["token"]
                            
                            },
           "users":{
-                   "in":[],
-                   "input":[],
+                   "in":["dashboardAdmin"],
+                   "input":["token"],
                    "process":["collection:user","edit:user"],
-                   "out":[],
+                   "out":["dashboardAdmin"],
                     "output":[]
                    },
           "payments":{
-                    "in":[],
-                    "input":[],
+                    "in":["dashboardAdmin"],
+                    "input":["token"],
                     "process":["collection:pay","edit:pay"],
-                    "out":[],
+                    "out":["dashboardAdmin"],
                     "output":[]
                     },
           "inventory":{
-                      "in":[],
-                      "input":[],
+                      "in":["token"],
+                      "input":["dashboardAdmin"],
                       "process":["collection:product","edit:product","import:product"],
-                     "out":[],
+                     "out":["dashboardAdmin"],
                     "output":[]
                       },
           "orders":{
-                 "in":[],
-                 "input":[],
+                 "in":["dashboardAdmin"],
+                 "input":["token"],
                  "process":["collection:order","edit:order","export:order"],
-                 "out":[],
+                 "out":["dashboardAdmin"],
                     "output":[]
                  },
           "clients":{
-                 "in":[], 
-                 "input":[],
+                 "in":["dashboardAdmin"], 
+                 "input":["token"],
                  "process":["collection:client","edit:client","import:client","export:client"],
-                 "out":[],
+                 "out":["dashboardAdmin"],
                  "output":[]
                  }
  
