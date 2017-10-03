@@ -779,7 +779,7 @@
                  "input":["token"],
                  "process":["collection:client","edit:client","import:client","export:client"],
                  "out":["dashboardAdmin"],
-                 "output":[]
+                 "output":["collection"]
                  }
  
  
