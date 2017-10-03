@@ -1,6 +1,7 @@
 {
  "constant":{
-     "system":"0.0"
+     "system":"0.0",
+     "pi":"3.1416"
  },
  "variables":{
      "name":"name",
@@ -23,13 +24,22 @@
        "register":[],
        "login":[],
        "catalog":[],
-       "viewProduct":[],
-       "comment":[],
-       "entities":[],
-       "users":[],
-       "products":[],
-       "groups":[],
-       "categories":[]
+       "view":[],
+       "cart":[],
+       "review":[],
+       "article":[],
+       "contact":[],
+       "menuStore":[]
+      
+ },
+ "list":{
+      "entities":["entityId"],
+       "users":["userId"],
+       "products":["productId"],
+       "groups":["groupId"],
+       "categories":["categoriId"],
+       "comments":["commentId"],
+       "courses":["courseId"]
  },
  "entity":{
     "equation":[
