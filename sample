@@ -1,6 +1,6 @@
 {
  "constant":{
- 
+     "system":"0.0"
  },
  "variables":{
      "name":"name",
@@ -110,6 +110,15 @@
     "groupTag",
     "groupCategory"
     ],
+    ads:[
+    "adsId",
+    "adsName",
+    "adsStart",
+    "adsEnd",
+    "adsUser",
+    "adsGroup"
+    ]
+    ,
     "address":[
     "newAddress",
     "addressId",
@@ -412,7 +421,7 @@
     [
     "newUrl",
     "urlId",
-    "url",
+    "urlName",
     "urlAlias",
     "urlParameters",
     "urlCallBack",
@@ -586,7 +595,7 @@
           },
           "filter":{
                    "input":["collectionId","variable","by"],
-                  "output":[]
+                  "output":["collection"]
           },
           "register":{
                   "input":["collectionId","entity","token"],
@@ -649,14 +658,14 @@
  "node":{
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
-                  "input":[""],
+                  "input":["userId","urlName","adsId"],
                   "process":["show:ads","check:user","log:user","add:use"],
                   "out":["catalog","view","viewGroup","quote"],
                   "output":[]
                   },
           "catalog":{
                     "in":["internet","catalog","view","viewGroup","quote"],
-                    "input":[],
+                    "input":["userId","urlName"],
                     "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],
                     "out":[],
                     "output":["view","article","quote","viewGroup","catalog"]
