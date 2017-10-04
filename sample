@@ -418,6 +418,13 @@
     "fileDate",
     "fileStatus"
     ],
+    "instruction":[
+    "newInstruction",
+    "instructionName",
+    "instructionId",
+    "instructionSteps",
+    "instructionDescription"
+    ],
     "comment":[
     "newComment"
     "commentId",
