@@ -20,17 +20,32 @@
      "id":"entity",
      "relation":"entity"
  },
- "arrays":{
+ "set":{
        "register":[],
        "login":[],
-       "catalog":[],
-       "view":[],
-       "cart":[],
+       "listProduct":[],
+       "setProduct":[],
+       "setQuote":[],
+       "setPayment":[],
        "review":[],
-       "article":[],
+       "setArticle":[],
+       "newsLetter":[],
        "contact":[],
-       "menuStore":[]
-      
+       "slide":[],
+       "setSchool":[],
+       "setCourse":[],
+       "mapCourse":[],
+       "menuSite":[],
+       "menuAdmin":[],
+       "menuClient":[],
+       "menuUser":[],
+       "siteMap":[],
+       "siteStatus":[],
+       "toolTip":[],
+       "theme":[],
+       "documents":[],
+       "howTo":[],
+       "instructions":[]
  },
  "list":{
       "entities":["entityId"],
@@ -44,13 +59,13 @@
  "entity":{
     "equation":[
     "newEquation"
-    "equationId":"",
-    "equationName":"",
-    "equationDescription":"",
-    "equationInput":"",
-    "equationProcess":"",
-    "equationState":"",
-    "equationOutput":""
+    "equationId",
+    "equationName",
+    "equationDescription",
+    "equationInput",
+    "equationProcess",
+    "equationState",
+    "equationOutput"
     ],
     "account":[
     "newCccount"
@@ -268,7 +283,9 @@
     "school":[
     "schoolId",
     "schoolName",
-    "schoolCarrer"
+    "schoolCarrer",
+    "schoolCourses",
+    "schoolCampus"
     ],
     "course":[
     "newCourse",
