@@ -25,6 +25,7 @@
        "login":[],
        "listProduct":[],
        "setProduct":[],
+       "editProduct":[],
        "setQuote":[],
        "setPayment":[],
        "review":[],
@@ -34,6 +35,8 @@
        "slide":[],
        "setSchool":[],
        "setCourse":[],
+       "setAccount":[],
+       "editAccount":[],
        "mapCourse":[],
        "menuSite":[],
        "menuAdmin":[],
@@ -511,8 +514,11 @@
      "numericOutput"
      ]
     }, 
-    "list":{
-    
+    "sources":{
+       "languages":"",
+       "days":"",
+       "address":"",
+       "schedule":""
     
     },
     "entityType":{
@@ -698,20 +704,20 @@
                   "input":["userId","urlName","adsId"],
                   "process":["show:ads","check:user","log:user","add:use"],
                   "out":["catalog","view","viewGroup","quote"],
-                  "output":[]
+                  "output":["userId"]
                   },
           "catalog":{
-                    "in":["internet","catalog","view","viewGroup","quote"],
+                    "in":["userId","internet","catalog","view","viewGroup","quote"],
                     "input":["userId","urlName"],
                     "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],
-                    "out":[],
+                    "out":["userId"],
                     "output":["view","article","quote","viewGroup","catalog"]
                     },       
           "article":{
                     "in":["internet","catalog","view","viewgroup"], 
-                    "input":[],
+                    "input":["userId","urlName"],
                     "process":["check:user","log:user","view:article",","show:articles","set:theme"],
-                    "out":[],
+                    "out":["userId"],
                     "output":["catalog","view","viewGroup"]
                     },
           "view":{
