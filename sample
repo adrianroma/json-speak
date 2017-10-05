@@ -1486,7 +1486,7 @@
                   "output":["boolean"]
           },
           "view":{
-                  "input":["collectionId"."entityId"],
+                  "input":["collectionId","entityId"],
                   "output":["entity"]
           },
           "options":{
@@ -1537,7 +1537,7 @@
           "article":{
                     "in":["internet","catalog","view","viewgroup"], 
                     "input":["userId","urlName"],
-                    "process":["check:user","log:user","view:article",","show:articles","set:theme"],
+                    "process":["check:user","log:user","view:article","show:articles","set:theme"],
                     "out":["userId"],
                     "output":["catalog","view","viewGroup"]
                     },
@@ -1579,14 +1579,14 @@
           "buy":{
                   "in":["quoteId"],
                   "input":[],
-                  "process":["check:user","show:quote",","show:pay","transform:quote"],
+                  "process":["check:user","show:quote","show:pay","transform:quote"],
                   "out":["track"],
                     "output":["userId","taskId"]
                   },
-          "track:{
+          "track":{
                   "in":["buy"],
                   "input":["orderId","userId"],
-                  "process":["check:user,","show:order","send:order"],
+                  "process":["check:user","show:order","send:order"],
                   "out":["success"],
                     "output":["orderId"]
                   },
@@ -1605,7 +1605,7 @@
                   },
           "login":{
                   "in":["catalog","view","sell","viewGroup","quote"],
-                  "input":["catalog","register","internet",""],
+                  "input":["catalog","register","internet"],
                   "process":["log:user","add:user"],
                   "out":["dashboard","dashboardAdmin"],
                   "output":["tokenId"]
