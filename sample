@@ -21,23 +21,19 @@
      "id":"entity",
      "relation":"entity"
  },
- cache:[
-      "list:collection",
-      "list:variable",
-      "list:constant",
-      "variable:id",
-      "variable:key",
-      "variable:token"
-      ],
+ cache:{
+      "list":["collection","variable","constant"],
+      "variable":["userId","key","token"],
+      },
  "list":{
-      "entities":["entityId"],
-       "users":["userId"],
-       "products":["productId"],
-       "collections":["collectionId"],
-       "groups":["groupId"],
-       "categories":["categoriId"],
-       "comments":["commentId"],
-       "courses":["courseId"]
+      "entity":["entityId"],
+       "user":["userId"],
+       "product":["productId"],
+       "collection":["collectionId"],
+       "group":["groupId"],
+       "category":["categoriId"],
+       "comment":["commentId"],
+       "course":["courseId"]
  },
  "entity":{
     "array":[
