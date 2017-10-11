@@ -571,7 +571,12 @@
     "arrayData"
     ],
     "request":[
-    
+    "requestId",
+    "requestName",
+    "requestUrls",
+    "requestCallBack",
+    "requestParameters",
+    "requestToken"
     ],
     "form":[
     "formId",
