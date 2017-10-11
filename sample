@@ -599,8 +599,10 @@
                     "output":["value"]
           },
           "policy":{
-                    "input":{"collectionId","entityId","groupId","permission"}
-          }
+                    "input":{"collectionId","entityId","","groupId","permission"}
+          },
+          
+          
    
           
  },         
@@ -609,9 +611,9 @@
                   "in":["internet","catalog","view","viewGroup","quote"],
                   "input":["userId","urlName","adsId"],
                   "process":{
-                             "show":[],
-                             "check:user",
-                             "register:user",
+                             "show":,
+                             "check",
+                             "register",
              
                              },
                   "out":["catalog","view","viewGroup","quote"],
@@ -765,146 +767,9 @@
  
  
  
- },
-
- "node":{
-          "sell":{
-                  "in":["internet","catalog","view","viewGroup","quote"],
-                  "input":["userId","urlName","adsId"],
-                  "process":["show:ads","check:user","log:user","add:use"],
-                  "out":["catalog","view","viewGroup","quote"],
-                  "output":["userId"]
-                  },
-          "catalog":{
-                    "in":["userId","internet","catalog","view","viewGroup","quote"],
-                    "input":["userId","urlName"],
-                    "process":["check:user","view:catalog","get:category","show:ads","add:quote","log:user","add:user"],
-                    "out":["userId"],
-                    "output":["view","article","quote","viewGroup","catalog"]
-                    },       
-          "article":{
-                    "in":["internet","catalog","view","viewgroup"], 
-                    "input":["userId","urlName"],
-                    "process":["check:user","log:user","view:article","show:articles","set:theme"],
-                    "out":["userId"],
-                    "output":["catalog","view","viewGroup"]
-                    },
-          "view":{
-                 "in":["article","catalog,","sell","quote"],
-                 "input":[],
-                 "process":["check:user","log:user","view:view","set:user","show:product","set:theme"],
-                 "out":[],
-                    "output":["userId"]
-                 },
-          "viewGroup":{
-                 "in":["article","catalog,","sell","quote"],
-                 "input":["userId"],
-                 "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
-                 "out":["quote","article","catalog","sell"],
-                    "output":["userId"]
-                 },
-          "dashboardClient":{
-                   "in":["login"],
-                    "input":["userId"],
-                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
-                    "out":["users"],
-                    "output":["userId"]
-                    },
-           "dashboardUser":{
-                   "in":["login"],     
-                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
-                    "out":["orders"],
-                    "output":["userId"]
-                    },                  
-                    
-          "quote":{
-                   "in":["article","catalog","sell","quote"],
-                   "input":["userId"],
-                   "process":["check:user","show:quote","edit:quote","log:user","add:user"],
-                   "out":["buy"],
-                    "output":["collectionId","userId"]
-                  },
-          "buy":{
-                  "in":["quoteId"],
-                  "input":[],
-                  "process":["check:user","show:quote","show:pay","transform:quote"],
-                  "out":["track"],
-                    "output":["userId","taskId"]
-                  },
-          "track":{
-                  "in":["buy"],
-                  "input":["orderId","userId"],
-                  "process":["check:user","show:order","send:order"],
-                  "out":["success"],
-                    "output":["orderId"]
-                  },
-          "success":{
-                  "in":["track"],
-                  "input":[],
-                  "process":["check:user","show:order","send:order"],
-                  "out":["catalog"],
-                    "output":["orderId","taskId"]
-                  },
-          "register":{
-                  "in":["catalog","view","sell","viewGroup"],
-                  "process":["check:user","log:user","add:user"],
-                  "out":["login"],
-                    "output":["userId","taskId"]
-                  },
-          "login":{
-                  "in":["catalog","view","sell","viewGroup","quote"],
-                  "input":["catalog","register","internet"],
-                  "process":["log:user","add:user"],
-                  "out":["dashboard","dashboardAdmin"],
-                  "output":["tokenId"]
-                  },
-          "dashboardAdmin":{
-                           "in":["login"],
-                           "input":[""],
-                           "process":["check:user","menu:admin"],
-                            "out":["users","payments","inventory","orders"],
-                            "output":["tokenId","arrayId"]
-                           
-                           },
-          "users":{
-                   "in":["dashboardAdmin"],
-                   "input":["token"],
-                   "process":["collection:user","edit:user"],
-                   "out":["dashboardAdmin"],
-                    "output":["collectionId","taskId"]
-                   },
-          "payments":{
-                    "in":["dashboardAdmin"],
-                    "input":["token"],
-                    "process":["collection:pay","edit:pay"],
-                    "out":["dashboardAdmin"],
-                    "output":["collectionId","taskId"]
-                    },
-          "inventory":{
-                      "in":["token"],
-                      "input":["dashboardAdmin"],
-                      "process":["collection:product","edit:product","import:product"],
-                     "out":["dashboardAdmin"],
-                    "output":["collectionId","taskId"]
-                      },
-          "orders":{
-                 "in":["dashboardAdmin"],
-                 "input":["token"],
-                 "process":["collection:order","edit:order","export:order"],
-                 "out":["dashboardAdmin"],
-                    "output":["collectionId","taskId"]
-                 },
-          "clients":{
-                 "in":["dashboardAdmin"], 
-                 "input":["token"],
-                 "process":["collection:client","edit:client","import:client","export:client"],
-                 "out":["dashboardAdmin"],
-                 "output":["collectionId","taskId"]
-                 }
- 
- 
- 
  }
+
+ 
 
              
         
