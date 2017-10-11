@@ -597,6 +597,9 @@
           "getValue":{
                     "input":["entityId","variable"],
                     "output":["value"]
+          },
+          "policy":{
+                    "input":{"collectionId","entityId","groupId","permission"}
           }
    
           
@@ -605,7 +608,12 @@
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
                   "input":["userId","urlName","adsId"],
-                  "process":["show:ads","check:user","log:user","add:use"],
+                  "process":{
+                             "show":[],
+                             "check:user",
+                             "register:user",
+             
+                             },
                   "out":["catalog","view","viewGroup","quote"],
                   "output":["userId"]
                   },
