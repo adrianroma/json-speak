@@ -1111,12 +1111,16 @@
           },
           
           "checkValue":{
-                   "input":["entityId","variable"],
-                   "output":["value"]
+                   "input":["entityId","variable","value"],
+                   "output":["boolean"]
           },
           "setValue":{
                    "input":["entityId","variable","value"],
                    "output":["boolean"]
+          },
+          "getValue":{
+                    "input":["entityId","variable"],
+                    "output":["value"]
           }
    
           
