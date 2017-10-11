@@ -31,7 +31,7 @@
        "product":["productId"],
        "collection":["collectionId"],
        "group":["groupId"],
-       "category":["categoriId"],
+       "category":["categoryId"],
        "comment":["commentId"],
        "course":["courseId"]
  },
@@ -450,7 +450,6 @@
     ],
     "url":
     [
-    "newUrl",
     "urlId",
     "urlName",
     "urlAlias",
@@ -546,14 +545,10 @@
      "relation":"entity"
  },
   
- cache:[
-      "list:collection",
-      "list:variable",
-      "list:constant",
-      "variable:id",
-      "variable:key",
-      "variable:token"
-      ],
+ cache:{
+      "list":["collection","variable","constant"],
+      "variable":["id","key","token"]
+      },
  "list":{
       "entities":["entityId"],
        "users":["userId"],
