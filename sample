@@ -1092,126 +1092,34 @@
           },
  
  "methods":{
-          "show":{
-                  "input":["collectionId","entityId"],
-                  "output":["entity"]
-                  },
+         
           "check":{
                   "input":["collectionId","entityId"],
                    "output":["boolean"]
           },
           "set":{
-                   "input":["collectionId","entityId","variable","value"],
+                   "input":["collectionId","entity"],
                    "output":["boolean"]
           },
-           "get":{
-                   "input":["collectionId","entityId","variable"],
-                  "output":["value"]
+          "get":{
+                   "input":["collectionId","entityId"],
+                  "output":["entity"]
           },
           "delete":{
                    "input":["collectionId","entityId"],
                   "output":["boolean"]
           },
-          "add":{
-                  "input":["collectionId","entity"],
-                  "output":["boolean"]
-          },
-          "push":{
-                   "input":["collectionId","entity","sort"],
-                   "output":["boolean"]
-          },
-          "pop":{
-                   "input":["collectionId","sort"],
-                   "output":["entity"]
-          },
-          "explode":{
-                  "input":["collectionId","by","value"],
-                  "output":["groupCollection"]
-          },
-          "implode":{
-                  "input":["groupCollection","by","value"],
-                  "output":["collection"]
           
-          }
-          ,
-          "log":{
-                  "input":["collectionId","entity","token"],
-                  "output":["boolean","token","goId"]
-          },
-          "edit":{
-                   "input":["entity"],
-                   "output":["entity"] 
-                  },
-         
-          "collection":{
-                    "input":["collectionId"],
-                    "output":["collection"]
-           },
-          "search":{
-                  "input":["collectionId","variable","like"],
-                  "output":["collection"]
-          },
-          "filter":{
-                   "input":["collectionId","variable","by"],
-                  "output":["collection"]
-          },
-          "register":{
-                  "input":["collectionId","entity","token"],
-                  "output":["boolean","token","goId"]
-          },
-          "group":{
-                  "input":["entityId","entityId"],
-                  "output":["boolean"]
-          },
-          "getValue":{
-                  "input":["entityId","variable"],
-                  "output":["value"]
+          "checkValue":{
+                   "input":["entityId","variable"],
+                   "output":["value"]
           },
           "setValue":{
-                  "input":["entityId","variable","value"],
-                  "output":["boolean"]
-          },
-          "addValue":{
-                  "input":["entityId","variable"],
-                  "output":["boolean"]
-          },
-          "deleteValue":{
-                  "input":["entityId","variable","value"],
-                  "output":["boolean"]
-          },
-          "view":{
-                  "input":["collectionId","entityId"],
-                  "output":["entity"]
-          },
-          "options":{
-                  "input":["collectionId","entityId"],
-                  "output":["entityOptions"]
-          },
-          "import":{
-                  "input":["collection"],
-                  "output":["collection"]
-          },
-          "export":{
-                  "input":["collection"],
-                  "output":["collection"]
-          },
-          "transform":{
-                 "input":["collectionId","entityId","collectionId"],
-                 "output":["entityId"]
-          },
-          
-          "send":{
-                  "input":["collectionId","entityId"],
-                  "output":["boolean"]
-          },
-          "sum":{
-                  "input":["numericId"],
-                  "output":["numericResult"]
-          },
-          "substraction":{
-                  "input":["numericId"],
-                  "output":["numericResult"]
+                   "input":["entityId","variable","value"],
+                   "output":["boolean"]
           }
+   
+          
  },         
  "node":{
           "sell":{
@@ -1236,14 +1144,14 @@
                     "output":["catalog","view","viewGroup"]
                     },
           "view":{
-                 "in":["article","catalog,","sell","quote"],
-                 "input":[],
+                 "in":["internet","article","catalog,","sell","quote"],
+                 "input":["internet","catalog","view","quote","viewgroup"],
                  "process":["check:user","log:user","view:view","set:user","show:product","set:theme"],
                  "out":[],
                     "output":["userId"]
                  },
           "viewGroup":{
-                 "in":["article","catalog,","sell","quote"],
+                 "in":["internet","article","catalog,","sell","quote"],
                  "input":["userId"],
                  "process":["check:user","view:productGroup","show:productGroup","set:theme","log:user","add:user"],
                  "out":["quote","article","catalog","sell"],
@@ -1257,12 +1165,31 @@
                     "output":["userId"]
                     },
            "dashboardUser":{
-                   "in":["login"],     
+                   "in":["dashboardClient"],     
                     "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
                     "out":["orders"],
                     "output":["userId"]
                     },                  
-                    
+           "orderClient":{
+                   "in":["dashboardClient"],     
+                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
+                    "out":["orders"],
+                    "output":["userId"]                 
+           },
+           "trackClient":{
+                   "in":["login"],     
+                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
+                    "out":["orders"],
+                    "output":["userId"]           
+           
+           },
+           "accountUser":{
+                   "in":["login"],     
+                    "process":["check:user","show:dashboard","set:theme","log:user","add:user"],
+                    "out":["orders"],
+                    "output":["userId"]           
+           
+           },
           "quote":{
                    "in":["article","catalog","sell","quote"],
                    "input":["userId"],
@@ -1391,130 +1318,7 @@
             "geoLog":"([1][8][0]["."][0][0][0])|(^[1][0-7][0-9]["."][0-9]{1,3}$)|(^[0-9]{1,2}["."][0-9]{0,3}$)",
             "allow":"\b^ALLOWED$\b|\b^DENIED$\b|\b^SUSPEND$\b",
             "privilege":"\b^FULL$\b|\b^SIMPLE$\b|\b^BASIC$\b|\b^MASTER$\b"
-          },
- 
- "methods":{
-          "show":{
-                  "input":["collectionId","entityId"],
-                  "output":["entity"]
-                  },
-          "check":{
-                  "input":["collectionId","entityId"],
-                   "output":["boolean"]
-          },
-          "set":{
-                   "input":["collectionId","entityId","variable","value"],
-                   "output":["boolean"]
-          },
-           "get":{
-                   "input":["collectionId","entityId","variable"],
-                  "output":["value"]
-          },
-          "delete":{
-                   "input":["collectionId","entityId"],
-                  "output":["boolean"]
-          },
-          "add":{
-                  "input":["collectionId","entity"],
-                  "output":["boolean"]
-          },
-          "push":{
-                   "input":["collectionId","entity","sort"],
-                   "output":["boolean"]
-          },
-          "pop":{
-                   "input":["collectionId","sort"],
-                   "output":["entity"]
-          },
-          "explode":{
-                  "input":["collectionId","by","value"],
-                  "output":["groupCollection"]
-          },
-          "implode":{
-                  "input":["groupCollection,"by","value"],
-                  "output":["collection"]
-          
-          }
-          ,
-          "log":{
-                  "input":["collectionId","entity","token"],
-                  "output":["boolean","token","goId"]
-          },
-          "edit":{
-                   "input":["entity"],
-                   "output":["entity"] 
-                  },
-         
-          "collection":{
-                    "input":["collectionId"],
-                    "output":["collection"]
-           },
-          "search":{
-                  "input":["collectionId","variable","like"],
-                  "output":["collection"]
-          },
-          "filter":{
-                   "input":["collectionId","variable","by"],
-                  "output":["collection"]
-          },
-          "register":{
-                  "input":["collectionId","entity","token"],
-                  "output":["boolean","token","goId"]
-          },
-          "group":{
-                  "input":["entityId","entityId"],
-                  "output":["boolean"]
-          },
-          "getValue":{
-                  "input":["entityId","variable"],
-                  "output":["value"]
-          },
-          "setValue":{
-                  "input":["entityId","variable","value"],
-                  "output":["boolean"]
-          },
-          "addValue":{
-                  "input":["entityId","variable"],
-                  "output":["boolean"]
-          },
-          "deleteValue":{
-                  "input":["entityId","variable","value"],
-                  "output":["boolean"]
-          },
-          "view":{
-                  "input":["collectionId","entityId"],
-                  "output":["entity"]
-          },
-          "options":{
-                  "input":["collectionId","entityId"],
-                  "output":["entityOptions"]
-          },
-          "import":{
-                  "input":["collection"],
-                  "output":["collection"]
-          },
-          "export":{
-                  "input":["collection"],
-                  "output":["collection"]
-          },
-          "transform":{
-                 "input":["collectionId","entityId","collectionId"],
-                 "output":["entityId"]
-          }
-          
-          "send":{
-                  "input":["collectionId","entityId"],
-                  "output":["boolean"]
-          },
-          "sum":{
-                  "input":["numericId"],
-                  "output":["numericResult"]
-          },
-          "substraction":{
-                  "input":["numericId"],
-                  "output":["numericResult"]
-          }
- },         
+          },       
  "node":{
           "sell":{
                   "in":["internet","catalog","view","viewGroup","quote"],
