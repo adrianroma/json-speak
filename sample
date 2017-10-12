@@ -598,10 +598,29 @@
                     "input":["entityId","variable"],
                     "output":["value"]
           },
-          "policy":{
-                    "input":{"collectionId","entityId","","groupId","permission"}
+          "setPermission":{
+                    "input":["collectionId","entityId","groupId","permission"],
+                    "output":["boolean"]
           },
+          "getPermission":{
+                    "input":["collectionId","entityId","groupId"],
+                    "output":["permission"]
+          },
+          "setRequired":{
+                    "input":["collectionId","entityId","value","boolean"],
+                    "output":["boolean"]
+          },
+          "getRequired":{
+                    "input":["collectionId","entityId","value"],
+                    "output":["boolean"]
+          },
+          "setRelation":{
+                    "input":["collections","variable"],
+                    "output":["boolean"]
+          },
+          "getRelation":{
           
+          }
           
    
           
@@ -611,7 +630,7 @@
                   "in":["internet","catalog","view","viewGroup","quote"],
                   "input":["userId","urlName","adsId"],
                   "process":{
-                             "show":,
+                             "show":[],
                              "check",
                              "register",
              
