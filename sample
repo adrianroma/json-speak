@@ -27,8 +27,11 @@
      "id":"entity",
      "relation":"entity"
  },
-  
- cache:{
+ "array":{
+ 
+ },
+ "cache":{
+      "collection":[""],
       "list":["collection","variable","constant"],
       "variable":["id","key","token"]
       },
@@ -584,6 +587,11 @@
           "delete":{
                    "input":["collectionId","entityId"],
                   "output":["boolean"]
+          },
+          
+          "entity":{
+                  "input":["entity"],
+                  "output":["entityId"]
           },
           
           "checkValue":{
