@@ -4,10 +4,10 @@
      "pi":"3.1416"
  },
  "sources":{
-       "languages":"",
-       "days":"",
-       "address":"",
-       "schedule":"" 
+       "languages":"LANGUAGE_CODE",
+       "days":"DATE",
+       "address":"REGION_NAME",
+       "schedule":"SCHEDULE" 
     },
  "variable":{
      "key":"entity",
@@ -619,7 +619,12 @@
                     "output":["boolean"]
           },
           "getRelation":{
-          
+                     "input":["variable"],
+                     "output":["collections"]
+          },
+          "filter":{
+                     "input":["collectionId","variable","value","by","sort"],
+                     "output":[collectionId]
           }
           
    
