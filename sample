@@ -26,6 +26,7 @@
      "token":"alphanumeric",
      "id":"entity",
      "relation":"entity"
+     "number":"r"
  },
  "array":{
  
@@ -43,7 +44,8 @@
        "groups":["groupId"],
        "categories":["categoriId"],
        "comments":["commentId"],
-       "courses":["courseId"]
+       "courses":["courseId"],
+       "numbers":["numberId"]
  },
  "entity":{
     "array":[
@@ -508,11 +510,12 @@
     "dashboardOutput",
     "dashboardInput"
     ],
-    "numeric":[
-     "numericName",
-     "numericId",
-     "numericInput",
-     "numericOutput"
+    "numerber":[
+     "numeberName",
+     "numberId",
+     "numberValue",
+     "numberSign",
+     "numberTag"
      ]
     },
     "entityType":{
@@ -633,6 +636,11 @@
           "filter":{
                      "input":["collectionId","variable","value","by","sort"],
                      "output":[collectionId]
+          },
+          "calculator":{
+                     "input":["numbers","operator"],
+                     "output":["numbers"],
+          
           }
           
    
