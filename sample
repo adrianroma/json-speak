@@ -649,6 +649,12 @@
                      "input":["numbers","operator"],
                      "output":["numbers"],
           
+          },
+          "node":{
+          
+          },
+          "block":{
+          
           }
           
    
@@ -657,7 +663,7 @@
  "node":{
 
           "node:login":{
-                  "in":["internet:view","product:view"],
+                  "in":["node:view","node:view"],
                   "input":["*"],
                   "block:register":{
                              "input":["*"],
@@ -672,7 +678,6 @@
                              "check:user":{
                                          "in":["*"],
                                          "input":["#search"],
-                                         "url":["form"],
                                          "output":["*"],
                                          "out":["*"]
                              
@@ -680,13 +685,18 @@
                              "register:user":{
                                          "in":["*"],
                                          "input":["#search"],
-                                         "url":["form"],
                                          "output":["*"],
                                          "out":["*"]
                              }            
                             "output":["*"],
                             "in":["*"]
                        }, 
+                  "cache:client":{
+                          "in":["*"], 
+                          "input":["*"],
+                          "output":["*"],
+                          "out":["*"]
+                  },     
                   "out":["*"],     
                   "output":["*"]
             }
