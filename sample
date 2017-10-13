@@ -656,14 +656,16 @@
  },         
  "node":{
 
-          "login:view":{
+          "node:login":{
                   "in":["internet:view","product:view"],
                   "input":["*"],
-                   "node":{
+                  "block:register":{
+                             "input":["*"],
+                             "in":["*"],
                              "get:form":{
                                          "in":["*"],
                                          "input":["#search"],
-                                         "url":["form"],
+                                  
                                          "output":["*"],
                                          "out":["*"]
                                          }
@@ -682,8 +684,10 @@
                                          "output":["*"],
                                          "out":["*"]
                              }            
-                             
+                            "output":["*"],
+                            "in":["*"]
                        }, 
+                  "out":["*"],     
                   "output":["*"]
             }
       
