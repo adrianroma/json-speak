@@ -666,7 +666,7 @@
  "node":{
 
           "node:login":{
-                  "in":["node:view","node:view"],
+                  "in":["node:internet","node:view"],
                   "input":["*"],
                   "block:register":{
                              "input":["*"],
@@ -674,7 +674,6 @@
                              "get:form":{
                                          "in":["*"],
                                          "input":["#search"],
-                                  
                                          "output":["*"],
                                          "out":["*"]
                                          }
@@ -683,7 +682,6 @@
                                          "input":["#search"],
                                          "output":["*"],
                                          "out":["*"]
-                             
                              },
                              "register:user":{
                                          "in":["*"],
