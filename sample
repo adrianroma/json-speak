@@ -468,7 +468,6 @@
     ],
     "url":
     [
-    "newUrl",
     "urlId",
     "urlName",
     "urlAlias",
@@ -651,15 +650,15 @@
           
           },
           "node":{
-                     "input":[""],
-                     "output":[""]
+                     "input":["urlName","urlParameters"],
+                     "output":["urlId","nodeId"]
           },
           "block":{
-                   "input":[""],
-                   "output":[""]
+                   "input":["blockEntity"],
+                   "output":["blockId"]
           },
           "cache":{
-                  "input":[""],
+                  "input":["entityId","collectionId","listId"],
                   "output":[""]
           }
  },         
@@ -683,7 +682,7 @@
                                          "output":["*"],
                                          "out":["*"]
                              },
-                             "register:user":{
+                             "set:user":{
                                          "in":["*"],
                                          "input":["#search"],
                                          "output":["*"],
