@@ -33,19 +33,18 @@
       "entity":[""], 
       "constant":[""],
       "collection":[""],
-      "list":["collection","variable","constant","entity"],
+      "list":["collections","variables","constants","entities"],
       "variable":["id","key","token"]
       },
  "list":{
       "entities":["entityId"],
-       "Users":["userId"],
-       "Products":["productId"],
-       "collections":["collectionId"],
-       "groups":["groupId"],
-       "categories":["categoriId"],
-       "comments":["commentId"],
-       "courses":["courseId"],
-       "numbers":["numberId"]
+      "variables":["variable"] 
+      "values":["value"], 
+      "constants":[""],
+      "objects":["objectId"],
+      "equations":["equationId"],
+      "collections":["collectionId"],
+     
  },
  "entity":{
     "array":[
@@ -77,15 +76,6 @@
     "policyStatus",
     "policyFields",
     "policyPermission"
-    ],
-    "equation":[
-    "equationId",
-    "equationName",
-    "equationDescription",
-    "equationInput",
-    "equationProcess",
-    "equationState",
-    "equationOutput"
     ],
     "account":[
     "accountId",
@@ -693,6 +683,11 @@
           "cleanCache":{
                   "input":["collectionId"],
                   "output":["boolean"]  
+          },
+          "mapValue":{
+                  "input":[],
+                  "output":[],
+          
           }
  },         
  "node":{
