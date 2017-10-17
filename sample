@@ -10,26 +10,24 @@
        "schedule":"SCHEDULE" 
     },
  "variable":{
-     "key":"entity",
-     "name":"name",
-     "email":"email",
-     "password":"password",
-     "category":"name",
-     "url":"url",
-     "input":"variable",
-     "output":"variable",
-     "phone":"phone",
-     "image":"image",
-     "language":"name",
-     "description":"text",
-     "text":"text",
-     "token":"alphanumeric",
-     "id":"entity",
-     "relation":"entity"
-     "number":"r"
- },
- "array":{
-      
+     "Key":"entity",
+     "Name":"name",
+     "Email":"email",
+     "Password":"password",
+     "Category":"name",
+     "Url":"url",
+     "Input":"variable",
+     "Output":"variable",
+     "Phone":"phone",
+     "Image":"image",
+     "Language":"name",
+     "Description":"text",
+     "Text":"text",
+     "Token":"alphanumeric",
+     "Id":"entity",
+     "Relation":"entity"
+     "Number":"r",
+     "Callback":""
  },
  "cache":{
       "entity":[""], 
@@ -40,8 +38,8 @@
       },
  "list":{
       "entities":["entityId"],
-       "users":["userId"],
-       "products":["productId"],
+       "Users":["userId"],
+       "Products":["productId"],
        "collections":["collectionId"],
        "groups":["groupId"],
        "categories":["categoriId"],
@@ -518,6 +516,20 @@
      "numberSign",
      "numberTag"
      ],
+    "operation":[
+      "operationId",
+      "operationName"
+      "operationNumbers",
+      "operationType",
+      "operationResult"
+    ],
+    "equation":[
+      "equationId",
+      "equationName",
+      "equationOperations",
+      "operationType"
+      "equationEqual"
+    ],
      "workflow":[
      "workflowId",
      "workflowName",
@@ -654,12 +666,33 @@
                      "output":["urlId","nodeId"]
           },
           "block":{
-                   "input":["blockEntity"],
+                   "input":["blockId"],
                    "output":["blockId"]
           },
-          "cache":{
-                  "input":["entityId","collectionId","listId"],
-                  "output":[""]
+          "pushCache":{
+                  "input":["collection","entity"],
+                  "output":["boolean"]  
+          },
+          "popCache":{
+                   "input":["collectionId","entityId"],
+                  "output":["collection","entity"] 
+          }
+          ,
+          "setCache":{
+                  "input":["collectionId","entityId","variable","value"],
+                  "output":["boolean"]
+          },
+          "getCache":{
+                  "input":["collectionId","entityId","variable"],
+                  "output":["value"]
+          },
+          "clearCache":{
+                  "input":["collectionId","entityId"],
+                  "output":["boolean"]
+          },
+          "cleanCache":{
+                  "input":["collectionId"],
+                  "output":["boolean"]  
           }
  },         
  "node":{
@@ -691,7 +724,7 @@
                             "output":["*"],
                             "in":["*"]
                        }, 
-                  "cache:client":{
+                  "getCache:client":{
                           "in":["*"], 
                           "input":["*"],
                           "output":["*"],
