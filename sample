@@ -689,7 +689,7 @@
   "process":{
  
           "register":{
-                      "status":"false",
+                      "state":"false",
                       "input":["userId"],
                       "in":["*"],
                       "check:user":{
@@ -731,10 +731,12 @@
  "node":{
 
           "node:login":{
+                  "state":"true",
                   "in":["node:internet","node:view"],
                   "input":["*"],
                   "process:register":{
-                                      "in":["node:internet","node:view"],
+                                      "state":"false",
+                                      "in":["process:register"],
                                       "input":["*"],
                                       "out":["*"],     
                                       "output":["*"]
