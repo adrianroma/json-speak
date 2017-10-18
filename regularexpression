@@ -35,7 +35,7 @@ numberId:^[0-9"."]*$
 entity:^[0-9a-zA-Z"."]*$
 orderId:^(?:[1-9]|0[1-9]|10)$
 quoteId:^(?:[1-9]|0[1-9]|10)$
-accountId:"^(?:[1-9]|0[1-9]|10)$
+accountId:^(?:[1-9]|0[1-9]|10)$
 storeId:^(?:[1-9]|0[1-9]|10)$
 userId:^(?:[1-9]|0[1-9]|10)$
 position:\b^up$\b|\b^down$\b|\b^left$\b|\b^right$\b
