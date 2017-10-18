@@ -684,42 +684,61 @@
                   "input":[],
                   "output":[]
           }
- },         
+ 
+ }, 
+  "process":{
+ 
+          "register":{
+                      "status":"false",
+                      "input":["userId"],
+                      "in":["*"],
+                      "check:user":{
+                                  "state":"true",
+                                  "in":["check:user"],
+                                  "input":["userId"],
+                                  "out":[""],
+                                  "output":["get:form"]
+                
+                      },
+                      "getPermission:user":{
+                                  "state":"false",
+                                  "in":["check:user"],
+                                  "input":["userId"],
+                                  "out":["policyId"],
+                                  "output":["get:form"]
+                      },
+                      "get:form":{
+                                   "state":"false",
+                                   "in":["check:user"],
+                                   "input":["#registerUser","policyId"],
+                                   "out":["form"],
+                                   "output":["set:user"]
+                                 },
+                                
+                      "set:user":{
+                                   "state":"false",
+                                   "in":["get:form"],
+                                   "input":["userNick","userEmail","userPassword","userAllow"],
+                                   "out":["userState"],
+                                   "output":["get:form"]
+                                },
+                      "output":[""],
+                      "out":["*"],
+                              
+                      }
+ 
+ },
  "node":{
 
           "node:login":{
                   "in":["node:internet","node:view"],
                   "input":["*"],
-                  "block:register":{
-                             "input":["*"],
-                             "in":["*"],
-                             "get:form":{
-                                         "in":["*"],
-                                         "input":["#search"],
-                                         "output":["*"],
-                                         "out":["*"]
-                                         }
-                             "check:user":{
-                                         "in":["*"],
-                                         "input":["#search"],
-                                         "output":["*"],
-                                         "out":["*"]
-                             },
-                             "set:user":{
-                                         "in":["*"],
-                                         "input":["#search"],
-                                         "output":["*"],
-                                         "out":["*"]
-                             }            
-                            "output":["*"],
-                            "in":["*"]
-                       }, 
-                  "getCache:client":{
-                          "in":["*"], 
-                          "input":["*"],
-                          "output":["*"],
-                          "out":["*"]
-                  },     
+                  "process:register":{
+                                      "in":["node:internet","node:view"],
+                                      "input":["*"],
+                                      "out":["*"],     
+                                      "output":["*"]
+                                     }
                   "out":["*"],     
                   "output":["*"]
             }
