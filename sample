@@ -38,9 +38,10 @@
       },
  "list":{
       "entities":["entityId"],
-      "variables":["variable"] 
+      "variables":["variable"] ,
+      "numbers":["number"],
       "values":["value"], 
-      "constants":[""],
+      "constants":["constant"],
       "objects":["objectId"],
       "equations":["equationId"],
       "collections":["collectionId"],
@@ -646,11 +647,6 @@
                      "input":["collectionId","variable","value","by","sort"],
                      "output":[collectionId]
           },
-          "calculator":{
-                     "input":["numbers","operator"],
-                     "output":["numbers"],
-          
-          },
           "node":{
                      "input":["urlName","urlParameters"],
                      "output":["urlId","nodeId"]
@@ -684,10 +680,9 @@
                   "input":["collectionId"],
                   "output":["boolean"]  
           },
-          "mapValue":{
+          "eval":{
                   "input":[],
-                  "output":[],
-          
+                  "output":[]
           }
  },         
  "node":{
