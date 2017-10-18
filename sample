@@ -25,7 +25,7 @@
      "Text":"text",
      "Token":"alphanumeric",
      "Id":"entity",
-     "Relation":"entity"
+     "Relation":"entity",
      "Number":"r",
      "Callback":""
  },
@@ -518,7 +518,7 @@
       "equationId",
       "equationName",
       "equationOperations",
-      "operationType"
+      "operationType",
       "equationEqual"
     ],
      "workflow":[
