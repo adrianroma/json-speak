@@ -33,6 +33,7 @@
       "entity":[""], 
       "constant":[""],
       "collection":[""],
+      "hash":[""],
       "list":["collections","variables","constants","entities"],
       "variable":["id","key","token"]
       },
@@ -585,36 +586,32 @@
           ],
  
  "methods":{
-          "goTo":{
-                 "input":[],
-                 "output":[]
-          }, 
-         
+
           "check":{
-                  "input":["collectionId","entityId"],
-                   "output":["boolean"]
+                  "in":["collectionId","entityId"],
+                  "out":["boolean"]
           },
           "set":{
-                   "input":["collectionId","entity"],
-                   "output":["boolean"]
+                   "in":["collectionId","entity"],
+                   "out":["boolean"]
           },
           "get":{
-                   "input":["collectionId","entityId"],
-                  "output":["entity"]
+                  "in":["collectionId","entityId"],
+                  "out":["entity"]
           },
           "delete":{
-                   "input":["collectionId","entityId"],
-                  "output":["boolean"]
+                   "in":["collectionId","entityId"],
+                  "out":["boolean"]
           },
           
           "entity":{
-                  "input":["entity"],
-                  "output":["entityId"]
+                  "in":["entity"],
+                  "out":["entityId"]
           },
           
           "checkValue":{
-                   "input":["entityId","variable","value"],
-                   "output":["boolean"]
+                   "in":["entityId","variable","value"],
+                   "out":["boolean"]
           },
           "setValue":{
                    "input":["entityId","variable","value"],
@@ -688,42 +685,51 @@
           "eval":{
                   "input":[],
                   "output":[]
+          },
+          "goTo":{
+                  "input":[],
+                  "output":[]
           }
  
  }, 
   "process":{
-          "updateCache":{
-          
+          "cache":{
+                      "set":["system"],
+                      "reference":{"userKey:"}
           },
-          "register":{
+          "log":{
+                      "set":["general"],
                       "reference":{"userRegister":"true"},
-                      "policy":["general]",
-                      "input":["node:internet:userId","cache:client:userId"],
-                      "output":["node"],
+                      "error":["*"],
+                      "in":[],
+                      "out":[],
                       "check:user":{
+                                  "set":["general"], 
                                   "reference":{"userRegister":"true"},
-                                  "policy":["system"],
-                                  "input":["userId"],
-                                  "output":[""]
+                                  "error":[""],
+                                  "in":["userId"],
+                                  "out":[""]
                       },   
                       "get:form":{
+                                   "set":["general"],
                                    "reference":{"register":"true"},
-                                   "policy":["general"],
-                                   "input":["#registerUser","policyId"],
-                                   "output":["form"],
+                                   "error":[""]
+                                   "in":["#registerUser","policyId"],
+                                   "out":["form"],
                                  
                                  },
                                 
                       "set:user":{
+                                   "set":["system"], 
                                    "reference":{"userRegister":"true"},
-                                   "policy":["system"],
-                                   "input":["userNick","userEmail","userPassword","userAllow"],
-                                   "output":["get:form"]
+                                   "error":[""],
+                                   "in":["userNick","userEmail","userPassword","userAllow"],
+                                   "out":["get:form"]
                                 },
                                
                       "goTo:node":{
-                      
-                      
+                                  "reference":{"urlName":"#account","urlParameters":{""}}
+                                
                       }
                     
                               
@@ -732,9 +738,68 @@
  },
  "system:node":{
 
-          "node:login":{
-              "process:register":{}
+          "node:home":{
+              "process:log":{
+              
+              },
+              "process:register":{
+              
+              },
+              "process:menu":{
+              
+              },
+              "process:new":{
+              }
+          },
+          "node:account":{
+              "process:menu":{
+              
+              },
+              "process:dashboard":{
+              
+              },
+              "process:filter":{
+              
+              }
+          },
+          "node:catalog":{
+               "process:show":{
+               
+               },
+               "process:filter":{
+               
+               }
+               ,
+               "process:login":{
+               
+               },
+               "process:buy":{
+               
+               }
+          },
+          "node:view":{
+               "process:show":{
+               },
+               "process:buy":{
+               
+               }
+          },
+          "node:pay":{
+               
+               
+          },
+          "node:track":{
           
+          },
+          "node:admin":{
+              "process:menu":{},
+              "process:dashboard":{},
+              "process:show":{
+              
+              },
+              "process:filter":{
+              
+              }
           }
  
  }
