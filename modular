@@ -131,6 +131,7 @@
     "userFinalName",
     "userAddress",
     "userPayments",
+    "userRegister",
     "userCurrency",
     "userLanguage",
     "userBalance",
@@ -584,6 +585,10 @@
           ],
  
  "methods":{
+          "goTo":{
+                 "input":[],
+                 "output":[]
+          }, 
          
           "check":{
                   "input":["collectionId","entityId"],
@@ -687,71 +692,50 @@
  
  }, 
   "process":{
- 
+          "updateCache":{
+          
+          },
           "register":{
-                      "state":"false",
-                      "policy":"755",
-                      "input":["userId"],
-                      "in":["*"],
+                      "reference":{"userRegister":"true"},
+                      "policy":["general]",
+                      "input":["node:internet:userId","cache:client:userId"],
+                      "output":["node"],
                       "check:user":{
-                                  "state":"true",
-                                  "policy":"777",
-                                  "in":["check:user"],
+                                  "reference":{"userRegister":"true"},
+                                  "policy":["system"],
                                   "input":["userId"],
-                                  "out":[""],
-                                  "output":["get:form"]
-                
-                      },
-                      "getPermission:user":{
-                                  "state":"false",
-                                  "policy":"777",
-                                  "in":["check:user"],
-                                  "input":["userId"],
-                                  "out":["policyId"],
-                                  "output":["get:form"]
-                      },
+                                  "output":[""]
+                      },   
                       "get:form":{
-                                   "state":"false",
-                                   "policy":"777",
-                                   "in":["check:user"],
+                                   "reference":{"register":"true"},
+                                   "policy":["general"],
                                    "input":["#registerUser","policyId"],
-                                   "out":["form"],
-                                   "output":["set:user"]
+                                   "output":["form"],
+                                 
                                  },
                                 
                       "set:user":{
-                                   "state":"false",
-                                   "policy":"777",
-                                   "in":["get:form"],
+                                   "reference":{"userRegister":"true"},
+                                   "policy":["system"],
                                    "input":["userNick","userEmail","userPassword","userAllow"],
-                                   "out":["userState"],
                                    "output":["get:form"]
                                 },
-                      "output":[""],
-                      "out":["*"],
+                               
+                      "goTo:node":{
+                      
+                      
+                      }
+                    
                               
                       }
  
  },
- "node":{
+ "system:node":{
 
           "node:login":{
-                  "state":"true",
-                  "policy":"777",
-                  "in":["node:internet","node:view"],
-                  "input":["*"],
-                  "process:register":{
-                                      "state":"false",
-                                      "policy":"777",
-                                      "in":["process:register"],
-                                      "input":["*"],
-                                      "out":["*"],     
-                                      "output":["*"]
-                                     }
-                  "out":["*"],     
-                  "output":["*"]
-            }
-      
+              "process:register":{}
+          
+          }
  
  }
 
