@@ -1,10 +1,10 @@
 {
 
-"estament":["THEN",["IF",["EQUAL","1","2"]],["EQUAL","x",["MULTIPY","2","3"]]],
-"rotation":["EACH",["1","3","3"],"x",["EQUAL","z","x"],
-"multiply":["MULTIPLY",["1","5"]],
-"sum":["SUM",["2","5"]],
-"secuence":["SECUENCE",["INITIAL","x","0"],["STEP","x","8"],["LIMIT","x","200"]],
+"estament":["THEN",["IF",["EQUAL",["1"],["2"]]],["EQUAL",["x"],["MULTIPY",["2"],["3"]]]],
+"rotation":["EACH",["1","3","3"],["x"],["EQUAL",["z"],["x"]],
+"multiply":["MULTIPLY",["1"],["5"]]],
+"sum":["SUM",["2"],["5"]],
+"secuence":["SECUENCE",[EQUAL,["x"],["SUM",["x"],["2"]]],["INITIAL",["x"],["0"]],["STEP",["x"],["8"]],["LIMIT","x","200"]],
 "repeat":["REPEAT",["UNTIL",["EQUAL","x","7"]],["EQUAL","x","4"]]
 
 }
