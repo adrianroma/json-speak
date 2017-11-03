@@ -15,5 +15,5 @@
 "initial":["INITIAL","VARIABLE"],
 "secuence":["SECUENCE","EQUATION","INITIAL","STEP","LIMIT","ACTION"],
 "evalue":["EVAL","ASIGNATION","EQUATION"],
-"goto":["GOTO",""]
+"goto":["GOTO","NODE"]
 }
