@@ -1,0 +1,15 @@
+{
+
+ "list":{
+      "entities":["entityId"],
+      "variables":["variable"] ,
+      "numbers":["number"],
+      "values":["value"], 
+      "constants":["constant"],
+      "objects":["objectId"],
+      "equations":["equationId"],
+      "collections":["collectionId"],
+     
+ }
+ 
+ }
