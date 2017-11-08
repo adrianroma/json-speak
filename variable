@@ -1,5 +1,5 @@
 {
-     "Key":"entity",
+     "variable":"entity",
      "Name":"name",
      "LastName":"name",
      "finalName":"name",
@@ -12,6 +12,7 @@
      "IP":"ip",
      "Input":"variable",
      "In":"*",
+     "Id":"",
      "Out":"*",
      "Output":"variable",
      "Phone":"phone",
