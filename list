@@ -1,6 +1,4 @@
 {
-
- "list":{
       "entities":["entityId"],
       "variables":["variable"] ,
       "numbers":["number"],
@@ -9,7 +7,5 @@
       "objects":["objectId"],
       "equations":["equationId"],
       "collections":["collectionId"],
-     
- }
- 
+      "groups":["groupId"]
  }
