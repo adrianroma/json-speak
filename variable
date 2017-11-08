@@ -82,10 +82,12 @@
      "SubTotal":"",
      "Balance":""
      "Question":"",
-     "Answere":"",
+     "Answer":"",
      "Title":"",
      "Service":"",
+     "Port":""
      "Product":"",
+     "Position":"",
      "User":"",
      "City":"",
      "Country":"",
@@ -99,6 +101,9 @@
      "PhoneNumber":"",
      "CellNumber":"",
      "Seller":"",
+     "Order":"",
+     "Sort":"",
+     "filter":"",
      "Places":"",
      "Step":"",
      "Trigger":"",
