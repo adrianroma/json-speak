@@ -1,0 +1,6 @@
+{
+  "variables":["variableEntity"],
+  "entities":["entityId"],
+  "collections":["collectionId"],
+  "groups":["groupId"] 
+}
