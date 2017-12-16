@@ -40,7 +40,7 @@ quoteId:^[0-9a-zA-Z"."]*[0-9a-zA-Z]$
 accountId:^[0-9a-zA-Z"."]*[0-9a-zA-Z]$
 storeId:^[0-9a-zA-Z"."]*[0-9a-zA-Z]$
 userId:^[0-9a-zA-Z"."]*[0-9a-zA-Z]$
-position:\b^up$\b|\b^down$\b|\b^left$\b|\b^right$\b
+position:\b^up$\b|\b^down$\b|\b^before\b|\b^after\b|\b^between\b|\b^left$\b|\b^right$\b
 url:^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
 html_tag:^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$
 imageFormat:^[0-9a-zA-Z]*["."][j][p][g]$
