@@ -18,6 +18,7 @@ boolean:\b^TRUE$\b|\b^FALSE\b
 token:^(?:[1-9]|0[1-9]|10)$
 lowerCase:^[a-z]*$
 uperCase:^[A-Z]*$
+firstCase:^[A-Z][a-z]*$
 slug:^[a-z0-9-]+$
 entity:^[a-z0-9"."]+$
 variable:^[a-z0-9"."]+$
