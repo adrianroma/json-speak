@@ -15,7 +15,7 @@ IF 'variable' EQUAL 'value' AND 'variable' NOT EQUAL 'value' THEN RUN 'actionNam
 IF 'variable' NOT EQUAL 'value' ,THEN 'actionName' ELSE 'actionName' 
 IF 'variable' EQUAL 'value' THEN RUN 'actionName',ELSE IF 'varuable' EQUAL 'value' THEN RUN 'actionName' AND 'actionName' ,ELSE RUN 'action Name'
 GET PROPERTY 'entity' 
-SET PROPERTY 'property' VALUES 'value','value' TO 'entity','entity'
+SET PROPERTY 'property' VALUE 'value','value' TO 'entity','entity'
 FOR 'entity' IN 'collection' DO  RUN 'actionName'   
 MOVE 'entity' FROM 'collection' TO 'collection'
 MERGE 'collection','collection' TO 'collection'
@@ -23,6 +23,12 @@ DESTROY 'collection'
 DELETE 'entity' FROM 'collection'
 NEW 'entity' WITH STRUCTURE 'structure' 
 CREATE 'collection' WITH 'entity'
+RENDER 'structure'
+STACK 'stack' WITH 'structure'
+SEND 'entity' TO STACK 'stack'
+SEND 'data' TO URL 'url'
+SEND 'data' TO EMAIL 'email'
+
 
 
 
