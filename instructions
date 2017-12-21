@@ -18,16 +18,29 @@ GET PROPERTY 'entity'
 SET PROPERTY 'property' VALUE 'value','value' TO 'entity','entity'
 FOR 'entity' IN 'collection' DO  RUN 'actionName'   
 MOVE 'entity' FROM 'collection' TO 'collection'
+COPY 'entity' FROM 'collection' TO 'collection'
 MERGE 'collection','collection' TO 'collection'
+EXPLODE 'collection' BY 'variable'
 DESTROY 'collection'
 DELETE 'entity' FROM 'collection'
 NEW 'entity' WITH STRUCTURE 'structure' 
 CREATE 'collection' WITH 'entity'
 RENDER 'structure'
 STACK 'stack' WITH 'structure'
+PUSH 'data' STACK 'stack'
 SEND 'entity' TO STACK 'stack'
 SEND 'data' TO URL 'url'
 SEND 'data' TO EMAIL 'email'
+READ 'line' IN 'file' DO RUN 'actionName'
+READ 'line' IN 'file' SEARCH 'word'
+READ 'line' IN 'file' REPLACE 'word' by 'word'
+WRITE 'data' IN 'file'
+FOLLOW 'service' FROM 'node' TO 'node'
+SUM [10,20,2]
+MULTIPLY [30,22,1,1]
+
+
+
 
 
 
