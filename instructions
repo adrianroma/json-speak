@@ -41,15 +41,20 @@ READ 'line' IN 'file' SEARCH 'word'
 READ 'line' IN 'file' REPLACE 'word' by 'word'
 WRITE 'data' IN 'file'
 FOLLOW 'service' FROM 'node' TO 'node'
-LISTEN 'url' TO FILE 'file'
-LISTEN 'url' TO URL 'url'
+FOLLOW 'service' UNTIL 'node' STATE 'true'
+LISTEN 'url' GET CONTENT 
+LISTEN 'url' GET PARAMETERS 
+LISTEN 'url' GET PARAMETERS 'variable'
+LISTEN 'url' SET CONTENT IN 'url' 
 OBSERVE 'event' GET COLLECTION 'collection'
 OBSERVE 'event' GET ENTITY 'entity' FROM 'collection'
 OBSERVE 'event' GET VARIABLE 'variable' IN 'entity' FROM 'collection'
 CONTROL 'event' REFERENCE 'variable' EQUAL 'value' MODEL 'formula' 
+ADD EVENT 'event' IN 
 LOAD 'file' TO FILE 'file'
 LOAD 'file' TO URL 'url'
-DELAY 'process' BY 
+DELAY 'process' UNTIL ACTION 'action'
+DELAY 'process' AT '10:30'
 RUN 'process' STOP AFTER 'action'
 RUN 'process' STOP BEFORE 'action'
 RUN 'process' STOP AT '10:30'
@@ -59,8 +64,10 @@ CHECK 'entity' IN 'collection'
 CHECK 'variable' EQUAL 'value' IN 'entity' FROM 'collection'
 LOG ERROR 'error' IN FILE 'file'
 LOG ERROR 'error' IN ENTITY 'entity'
+STEP 
 SUM [10,20,2]
 MULTIPLY [30,22,1,1]
+
 
 
 
