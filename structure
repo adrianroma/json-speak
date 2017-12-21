@@ -1,0 +1,20 @@
+{
+
+"default":{
+"head":{},
+"header":{},
+"content":{},
+"footer":{}
+},
+
+"menu":{
+      "id":"",
+      "name":"",
+      "state":""
+      "value":{
+            
+       }
+      }
+
+
+}
