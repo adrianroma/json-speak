@@ -7,14 +7,34 @@
 "footer":{}
 },
 
-"menu":{
-      "id":"",
-      "name":"",
-      "state":""
-      "value":{
-            
-       }
+"menu:main":{
+      "id":"main",
+      "text":"",
+      "img":"",
+      "states":["open","closed","on"],
+      "actions":[""],
+      "goTo":["menu:footer"],
+      "class":["top"],
+      "child":{
+               "option:main":{"id":"","name":"option","state":"","text":"","action":"","goTo":"","child":""}
+            }
       }
+
+"box:search":{
+      "id":"",
+      "text":"",
+      "state":[""]
+      "actions":[""],
+      "child":{
+          "input:toSearch":{
+             
+          }
+          
+      }
+     }
+"box:slide":{
+
+}     
 
 
 }
