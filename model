@@ -1,8 +1,24 @@
 {
-  
-  "register:user":["IF",["AND",["NOT_EXIST",["userEmail"]],["IS_TRUE",["userAllow"]]],["LIST",["PUSH",["user"],["userId"]]],"ELSE",["LIST",["GOTO",["message:error"]]]],
-  
-  "setOrder:product":["IF",["AND",["GREATER_THAN",["productStock"],["1"]],["EXIST",["userId"]],["EXIST",["orderId"]]],["PUSH",["orderId"],["productId"]]]
-  
-  
+ "CAREER": " 
+ "COURSE":"",
+ "BOOK":"",
+ "BOARD":"",
+ "REGISTER":"",
+ "ALUMNI":"IF USER NOT EXIST REGISTER,",
+ "INSTITUTION":"",
+ "TEACHER":"",
+ "BROWSE":"",
+ "ENROLL":""
+ "PROGRAM":"",
+ "PAY":"",
+ "TRACK":"",
+ "HOWTO":"",
+ "INSTRUCTION":""
+ "BUY":"",
+ "REFUND":"",
+ "SUCCESSFUL":"",
+ "TOOLS":"",
+ "CONFIGURATION":"",
+ "OPTIONS":"",
+ "DASHBOARD":""
 }
