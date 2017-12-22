@@ -1,14 +1,43 @@
 {
+"button":{
+         "id":"",
+         "value":"",
+         "attribute":{
+           "visibility":""
+           "class":""
+         },
+         "set":{},
+         "event":{
+           "on":"",
+           "off":"",
+           "over":"",
+           "out":""
+         },
+         "node":{},
+         "state":{}
+},
 "text":{
-
+         "id":"",
+         "value":"",
+         "attribute":{},
+         "set":{},
+         "event":{
+           "over":"",
+           "copy";""
+         },
+         "node":[""],
+         "state":{}
 },
 "header":{
          "id":"",
          "value":"",
          "attribute":{},
          "set":{},
-         "event":{},
-         "node":{},
+         "event":{
+           "load":"",
+           "over":""
+         },
+         "node":["menu:main"],
          "state":{}
 },
 "content":{
@@ -16,9 +45,17 @@
          "value":"",
          "attribute":{},
          "set":{},
-         "event":{},
-         "node":{},
+         "event":{
+            "load":"",
+            "over":""
+         },
+         "node":["box:search","box:register","slide:main"],
          "state":{}
+},
+
+"article":{
+
+
 }
 
 
