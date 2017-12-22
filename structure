@@ -1,40 +1,25 @@
 {
+"text":{
 
-"default":{
-"head":{},
-"header":{},
-"content":{},
-"footer":{}
 },
-
-"menu:main":{
-      "id":"main",
-      "text":"",
-      "img":"",
-      "states":["open","closed","on"],
-      "actions":[""],
-      "goTo":["menu:footer"],
-      "class":["top"],
-      "child":{
-               "option:main":{"id":"","name":"option","state":"","text":"","action":"","goTo":"","child":""}
-            }
-      }
-
-"box:search":{
-      "id":"",
-      "text":"",
-      "state":[""]
-      "actions":[""],
-      "child":{
-          "input:toSearch":{
-             
-          }
-          
-      }
-     }
-"box:slide":{
-
-}     
+"header":{
+         "id":"",
+         "value":"",
+         "attribute":{},
+         "set":{},
+         "event":{},
+         "node":{},
+         "state":{}
+},
+"content":{
+        "id":"",
+         "value":"",
+         "attribute":{},
+         "set":{},
+         "event":{},
+         "node":{},
+         "state":{}
+}
 
 
 }
