@@ -56,7 +56,52 @@
 "article":{
 
 
+},
+
+"slide":{
+
+},
+
+"input":{
+
+
+},
+"image":{
+},
+"tag":{
+},
+"tooltip":{
+},
+"card":{
+},
+"brick":{
 }
+,
+"block":{
+
+},
+"wall":{
+
+},
+"map":{
+
+
+},
+"calendar":{
+
+},
+"book":{
+
+},
+"collage":{
+
+},
+"progress":{
+
+}
+
+
+
 
 
 }
