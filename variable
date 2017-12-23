@@ -84,7 +84,7 @@
      "Question":"",
      "Answer":"",
      "Title":"",
-     "Service":"",
+     "Service":"",f
      "Port":""
      "Product":"",
      "Position":"",
@@ -107,5 +107,11 @@
      "Places":"",
      "Step":"",
      "Trigger":"",
-     "Node":""
+     "Node":"",
+     "Action":"",
+     "Pause":""
+     "lat":"",
+     "long":"",
+     "Attribute":"",
+     "Reference":""
 }
