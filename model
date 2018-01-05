@@ -1,24 +1,13 @@
 {
- "CAREER": " 
- "COURSE":"",
- "BOOK":"",
- "BOARD":"",
- "REGISTER":"",
- "ALUMNI":"IF USER NOT EXIST REGISTER,",
- "INSTITUTION":"",
- "TEACHER":"",
- "BROWSE":"",
- "ENROLL":""
- "PROGRAM":"",
- "PAY":"",
- "TRACK":"",
- "HOWTO":"",
- "INSTRUCTION":""
- "BUY":"",
- "REFUND":"",
- "SUCCESSFUL":"",
- "TOOLS":"",
- "CONFIGURATION":"",
- "OPTIONS":"",
- "DASHBOARD":""
+   "FORM":{},
+   "MENU":{},
+   "CARD":{},
+   "DIALOG":{},
+   "POPUP":{},
+   "SLIDE":{},
+   "INSTRUCTION":{},
+   "FOLLOW":{},
+   "ARTICLE":{}
+   "TRACK":{},
+   "FORMULA":{}
 }
