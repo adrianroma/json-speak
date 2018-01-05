@@ -1,13 +1,32 @@
 {
-   "FORM":{},
+   "FORM":{"":""},
    "MENU":{},
    "CARD":{},
    "DIALOG":{},
    "POPUP":{},
+   "WAY":{},
+   "CLOUD":{},
    "SLIDE":{},
    "INSTRUCTION":{},
    "FOLLOW":{},
    "ARTICLE":{}
    "TRACK":{},
-   "FORMULA":{}
+   "EQUATION":{},
+   "BOX":{},
+   "SEARCH":{},
+   "LIST":{},
+   "ACCOUNT":{},
+   "PAY":{},
+   "MAP":{},
+   "RASTER":{},
+   "IMAGE":{},
+   "VIDEO":{},
+   "SOUND":{},
+   "FILE":{},
+   "DASHBOARD":{},
+   "GRAPH":{},
+   "MAIL":{},
+   "SMS":{},
+   "CHAT":{}
+   
 }
