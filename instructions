@@ -55,6 +55,8 @@ LOAD 'file' TO FILE 'file'
 LOAD 'file' TO URL 'url'
 DELAY 'process' UNTIL ACTION 'action'
 DELAY 'process' AT '10:30'
+DELAY 'process' AS '5' TIMES BY '1' FROM 'process' 
+FORWARD 'process' AT 
 RUN 'process' STOP AFTER 'action'
 RUN 'process' STOP BEFORE 'action'
 RUN 'process' STOP AT '10:30'
@@ -64,7 +66,7 @@ CHECK 'entity' IN 'collection'
 CHECK 'variable' EQUAL 'value' IN 'entity' FROM 'collection'
 LOG ERROR 'error' IN FILE 'file'
 LOG ERROR 'error' IN ENTITY 'entity'
-STEP 
+STEP  
 SUM [10,20,2]
 MULTIPLY [30,22,1,1]
 
