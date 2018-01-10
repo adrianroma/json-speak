@@ -5,17 +5,19 @@
          "attribute":{
            "visibility":""
            "class":"",
-           "value":""
-         },
-         "set":{},
-         "event":{
-           "on":"",
-           "off":"",
-           "over":"",
-           "out":""
-         },
-         "node":{},
-         "state":{}
+           "value":"",
+           "state":{},
+           "event":{
+                   "on":"",
+                   "off":"",
+                   "over":"",
+                   "out":""
+                 }
+          },
+          "set":{},
+   
+          "node":{},
+        
 },
 "text":{
          "id":"",
