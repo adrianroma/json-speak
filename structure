@@ -6,6 +6,9 @@
            "visibility":""
            "class":"",
            "value":"",
+           "variable":{
+                  "track":"0"
+           },
            "state":{},
            "event":{
                    "on":"",
@@ -235,7 +238,8 @@
 },
 "socialLinks":{
 
-}
+},
+"help":
 
 }
 
