@@ -29,7 +29,6 @@ EXPLODE 'collection' BY 'variable'
 DESTROY 'collection'
 DELETE 'entity' FROM 'collection'
 NEW 'entity' WITH STRUCTURE 'structure' 
-CREATE 'collection' WITH 'entity'
 RENDER 'structure'
 STACK 'variable' IN 'stack'
 STACK 'stack'
@@ -57,19 +56,30 @@ DELAY 'process' UNTIL ACTION 'action'
 DELAY 'process' AT '10:30'
 DELAY 'process' AS '5' TIMES BY '1' FROM 'process' 
 FORWARD 'process' AS '5' TIMES BY '3' FROM 'process'
+CREATE PROCESS 'process' WITH 'data'
+CREATE COLLECTION 'collection' WITH 'data'
+CREATE FILE 'file' WITH 'data'
+CREATE EVENT 'event' TRIGGERED BY 'process' IN 'step'
+CREATE URL 'url' TRIGGERED BY DESCRIPTION 'description' REDIRECT 'url'
+CREATE URL 'url' TRIGGERED BY KEY 'keys' REDIRECT 'url'
 RUN 'process' STOP AFTER 'action'
 RUN 'process' STOP BEFORE 'action'
 RUN 'process' STOP AT '10:30'
+RUN 'process' STOP IN STEP '3'
+RUN 'process' IN STEP '3'
 RUN 'process' WHEN 'action' END
 RUN 'process' WHEN 'action' START
 CHECK 'entity' IN 'collection'
 CHECK 'variable' EQUAL 'value' IN 'entity' FROM 'collection'
 LOG ERROR 'error' IN FILE 'file'
 LOG ERROR 'error' IN ENTITY 'entity'
+RAW 'file' TO URL 'url'
 STEP 'process' NEXT 'process'
 SUM [10,20,2]
 MULTIPLY [30,22,1,1]
-
+DIVIDE[30,2]
+REST[20,3,1]
+DESTROY 'process'
 
 
 
