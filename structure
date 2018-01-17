@@ -1,40 +1,6 @@
 {
 "button":{
-         "states":["on","hold","off","out"],
-         "cache":{
-                   "state":"none",
-                   "cron":"1 * * * *"
-                 },
-         "attribute":{
-           "visibility":"security:particular:start"
-           "class":"class:particular:start",
-           "state":"off",
-           "text":"text:action:service",
-           "value":"text:action:service",
-           "event":{
-                   "load":{
-                           "button:text":"text:action:service"
-                   }
-                   "on":{
-                           "button:value":"get services:track:mexico from particular:service"
-                           "button:state":"on"   
-                        },
-                   "off":{
-                           "button:state":"off"
-                   }
-                   "hold":{
-                          "button:state":"off"
-                   },
-                   "over":{
-                          "button:state":"over"
-                   },
-                   "out":{
-                          "button:state":"out"
-                   }
-                 }
-          },
-          "set":["set:paticular:start"],
-          "node":{}
+ 
 },
 "text":{
 
@@ -43,33 +9,7 @@
   
 },
 "content":{
-   "states":["on","hold","off","out"],
-         "cache":{
-                   "state":"none",
-                   "cron":"1 * * * *"
-                 },
-         "attribute":{
-           "visibility":"security:particular:start"
-           "class":"class:particular:start",
-           "state":"off",
-           "text":"text:action:service",
-           "value":"text:action:service",
-           "event":{
-               
-                   "over":{
-                          "button:state":"over"
-                   },
-                   "out":{
-                          "button:state":"out"
-                   }
-                 }
-          },
-          "set":["set:paticular:start"],
-          "node":{
-                  "top":"input:search"
-                  "center":"slide:particular",
-                  "bottom":""
-                 }
+
 },
 
 "article":{
