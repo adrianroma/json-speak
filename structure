@@ -1,6 +1,10 @@
 {
 "button":{
-         "states":["on","hold","off","out"]
+         "states":["on","hold","off","out"],
+         "cache":{
+                   "state":"none",
+                   "cron":"1 hour"
+                 },
          "attribute":{
            "visibility":"security:particular:start"
            "class":"class:particular:start",
