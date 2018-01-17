@@ -55,19 +55,7 @@
            "text":"text:action:service",
            "value":"text:action:service",
            "event":{
-                   "load":{
-                           "button:text":"text:action:service"
-                   }
-                   "on":{
-                           "button:value":"get services:track:mexico from particular:service"
-                           "button:state":"on"   
-                        },
-                   "off":{
-                           "button:state":"off"
-                   }
-                   "hold":{
-                          "button:state":"off"
-                   },
+               
                    "over":{
                           "button:state":"over"
                    },
@@ -78,7 +66,9 @@
           },
           "set":["set:paticular:start"],
           "node":{
-                  "top":"slide"
+                  "top":"input:search"
+                  "center":"slide:particular",
+                  "bottom":""
                  }
 },
 
@@ -114,48 +104,10 @@
 
 },
 "wall":{
-         "id":"",
-        
-         "attribute":{
-           "visibility":""
-           "class":"",
-           "value":"",
-           "variable":{
-                  "track":"0"
-           },
-           "state":{},
-           "event":{
-               
-                   "over":"",
-                   "out":""
-                 }
-          },
-          "set":{},
-   
-          "node":{},
+
 },
 "map":{
-         "id":"",
-        
-         "attribute":{
-           "visibility":""
-           "class":"",
-           "value":"",
-           "variable":{
-                  "track":"0"
-           },
-           "state":{},
-           "event":{
-                   "zoom":"",
-                   "move":"",
-                   "pick":"",
-                   "over":"",
-                   "out":""
-                 }
-          },
-          "set":{},
-   
-          "node":{},
+  
 
 },
 "calendar":{
