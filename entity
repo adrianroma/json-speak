@@ -3,10 +3,12 @@
     "array":[
     "arrayId",
     "arrayName",
+    "arrayValue",
     "arrayData"
     ],
     "request":[
     "requestId",
+    "requestValue"
     "requestName",
     "requestUrls",
     "requestCallBack",
@@ -16,6 +18,7 @@
     "form":[
     "formId",
     "formName",
+    "formValue",
     "formField",
     "formRequired",
     "formUrl",
@@ -24,6 +27,8 @@
     ],
     "policy":[
     "policyId",
+    "policyName",
+    "policyValue"
     "policyRules",
     "policyGroups",
     "policyStatus",
@@ -33,6 +38,7 @@
     "account":[
     "accountId",
     "accountName",
+    "accountValue",
     "accountEmail",
     "accountSocial",
     "accountUrls",
@@ -68,6 +74,7 @@
     "userId",
     "userName",
     "userEmail",
+    "userValue",
     "userSocial",
     "userUrls",
     "userMap",
@@ -102,6 +109,7 @@
     "group":[
     "groupId",
     "groupName",
+    "groupValue",
     "groupPrivilege",
     "groupTag",
     "groupCategory"
@@ -109,6 +117,7 @@
     ads:[
     "adsId",
     "adsName",
+    "adsValue",
     "adsStart",
     "adsEnd",
     "adsUser",
@@ -117,6 +126,7 @@
     ,
     "address":[
     "addressId",
+    "addressValue",
     "addressName",
     "addressStreet",
     "addressState",
@@ -137,6 +147,7 @@
     ],
     "product":[
     "productName",
+    "productValue",
     "productDescription",
     "productArticle",
     "productSku",
@@ -161,6 +172,8 @@
     ],
     "tag":[
     "tagId",
+    "tagName",
+    "tagValue",
     "tagKeywords",
     "tagRelation",
     "tagCategory",
@@ -177,6 +190,7 @@
     "serviceGroup",
     "serviceBook",
     "serviceId",
+    "serviceValue",
     "serviceImages",
     "serviceImage",
     "servicePriceCost",
