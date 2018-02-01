@@ -4,7 +4,7 @@
     "arrayId",
     "arrayName",
     "arrayValue",
-    "arrayData",
+    "arrayGraph",
     "arrayKey",
     "arraySet",
     "arrayGraph"    
@@ -14,6 +14,7 @@
     "requestId",
     "requestValue"
     "requestName",
+    "requestGraph",
     "requestUrls",
     "requestCallBack",
     "requestParameters",
