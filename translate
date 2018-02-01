@@ -7,10 +7,22 @@
    "set":["default"]
   } ,
   1:{
-   "en:us":"Home",
-   "es:mx":"Casa",
-   "fr:fr":"la Maison",
+   "en:us":"home",
+   "es:mx":"casa",
+   "fr:fr":"la maison",
    "set":["default"]
-  }
+  },
+  2:{
+   "en:us":"task",
+   "es:mx":"tarea",
+   "fr:fr":"tâche",
+   "set":["default"]
+   },
+  3:{
+   "en:us":"my account",
+   "es:mx":"mi cuenta",
+   "fr:fr":"mon compte",
+   "set":["default"]
+  } 
 
 }
