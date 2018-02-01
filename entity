@@ -4,7 +4,10 @@
     "arrayId",
     "arrayName",
     "arrayValue",
-    "arrayData"
+    "arrayData",
+    "arrayLevel",
+    "arraySet",
+    "arrayTree"
     ],
     "request":[
     "requestId",
