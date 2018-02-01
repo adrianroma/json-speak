@@ -5,9 +5,10 @@
     "arrayName",
     "arrayValue",
     "arrayData",
-    "arrayLevel",
+    "arrayKey",
     "arraySet",
-    "arrayTree"
+    "arrayGraph",
+    "arrayRelate"
     ],
     "request":[
     "requestId",
