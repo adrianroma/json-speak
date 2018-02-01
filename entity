@@ -7,18 +7,7 @@
     "arrayData",
     "arrayKey",
     "arraySet",
-    {
-     "id":"arrayId",
-     "attribute":{
-                 "title":"" 
-                 "type":"",
-                 "icon":"",
-                 "skin":""
-                 },
-     "event":{
-             },
-     "node":        
-    },
+    "arrayGraph"    
     "arrayRelate"
     ],
     "request":[
