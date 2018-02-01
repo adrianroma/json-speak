@@ -175,6 +175,23 @@
     "productAvail",
     "productStock"
     ],
+    "pay":[
+    "payId",
+    "payName",
+    "payValue",
+    "payKeywords",
+    "payRelation",
+    "payStatus",
+    "payFrom",
+    "payTo",
+    "payAt",
+    "payFor",
+    "payPartOf",
+    "payPlace",
+    "payOperator",
+    "payOperatorId",
+    "payOperatorStatus"
+    ],
     "tag":[
     "tagId",
     "tagName",
@@ -210,7 +227,6 @@
     "serviceRegion"
     ],
     "quote":[
-    "newQuote",
     "quoteAds",
     "quoteSellers",
     "quotePlaces",
