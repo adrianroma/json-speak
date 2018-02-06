@@ -38,16 +38,12 @@
     
     },                  
    "SESSION":{
-           "CLIENT":"",
-           "USER":"",
-           "ADMIN":"SELECT name IN admin ",
-           "YES":"SELECT true IN frontend:session WHERE key=frontend:key",
-           "ERROR":"",
-           "NOT":""
+           "TYPE":["SELECT type FROM frontend:session WHERE key=frontend:key"],
+           "STATE":["SELECT true FROM frontend:session WHERE key=frontend:key"]
  
    },
    "BROWSE":{
-           "LOCATED_AND_LISTEN":[],
+           "LOCATED":["SELECT lat,long FROM frontend:location WHERE key=frontend:key"],
            "BROWSING":[]
            "LISTEN":[],
            "ERROR":[]
