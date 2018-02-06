@@ -15,7 +15,7 @@
                 
                 },
                 "MESSAGE":{
-                                 "ERROR":"UPDATE ",   
+                                 "ERROR":"WRITE output:register:check_session:not IN input:message:general",   
                                  "WARNING":"",
                                  "UPDATE":"",
                                  "SUCCESSFUL":""
