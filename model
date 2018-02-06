@@ -40,8 +40,16 @@
            "CLIENT":"",
            "ADMIN":""
    },
+   "BROWSE":{
+           "LOCATED_AND_LISTEN":[],
+           "BROWSING":[]
+           "LISTEN":[],
+           "ERROR":[]
+   },
    "ERROR":{
-   
+           "SYSTEM":"",
+           "CLIENT":"",
+           "NETWORK":""
    
           },
    "ACCOUNT":{
@@ -50,15 +58,63 @@
             "DELETE":[]
            },
    
-   "CLIENT_TASK":{
+   "CLIENT":{
+            "CHECK_ACCOUNT":"",
+            "PICKUP_PRODUCT":"",
+            "CREATE_QUOTE":"",
+            "CREATE_ORDER":"",
+            "TRACK_ORDER":"",
+            "TRACK_PRODUCT":""
+   
+   },
+   "USER":{
+            "CHECK_ACCOUNT":"",
+            "ADD_PRODUCT":"",
+            "EDIT_PRODUCT":""
+            "BROWSE_ORDER":""
+            "TRACK_ORDER":""
+            "TRACK_CLIENT":""
+            "ADD_CLIENT":"",
+            "EDIT_CLIENT":""
+            "CHECK_CLIENT":""
+   
+   },
+   "ADMIN":{
+            "CHECK_ACCOUNT":"",
+            "ADD_USER":"",
+            "EDIT_USER":""
+            "TRACK_USER":"",
+            "BROWSE_ORDER":""
+            "TRACK_ORDER":""
+   
+   },
+   "PRODUCT":{
+   
+   },
+  
+   "CATEGORY":{
+   
+   },
+   "STORE":{
    
    
    },
-   "USER_TASK":{
+   "QUOTE":{
+   
+   },
+   
+   "ORDER":{
    
    
    },
-   "ADMIN_TASK":{
+   "TRACK":{
+   
+   },
+   "SUCCESSFUL":{
+   
+   },
+   
+   "DELIVERITY":{
    
    
    }
