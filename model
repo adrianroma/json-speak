@@ -1,24 +1,24 @@
 {
    "REGISTER":{
-               "CHECK_SESSION":{ "YES":["CHECK_USERNAME#EXIST"],
-                                 "NOT":["CHECK_USERNAME#NOT_EXIST"]
+               "CHECK_SESSION":{ "YES":["CHECK_USERNAME:EXIST:TRUE"],
+                                 "NOT":["CHECK_USERNAME:NOT_EXIST:TRUE","MESSAGE:ERROR:error:user:not"]
                                }
                "CHECK_USERNAME":{
-                                 "EXIST":"["REGISTRED"]",
-                                 "NOT_EXIST":["MAKE_REGISTER"]
+                                 "EXIST":"["MAKE_REGISTER:REGISTRED:TRUE"]",
+                                 "NOT_EXIST":["MAKE_REGISTER:REGISTRED:FALSE"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":"REGISTRED#FALSE",
+                                 "NOT_REGISTRED":"MAKE_REGISTER:REGISTRED:FALSE",
                                  "REGISTRED":"SELECT name FROM user:client WHERE name=input:user:name",
-                                 
-                                 "NECESARY_FIELDS":"SELECT * FROM input:user WHERE =   "
+                                 "REGISTER":"PUSH input:user FROM "
+                                 "NECESARY_FIELDS":"COMPARE input:user WITH required:user"
                 
                 },
                 "MESSAGE":{
-                                 "ERROR":"WRITE output:register:check_session:not IN input:message:general",   
-                                 "WARNING":"",
-                                 "UPDATE":"",
-                                 "SUCCESSFUL":""
+                                 "ERROR":"WRITE SELF IN input:message:general",   
+                                 "WARNING":"WRITE SELF IN input:meesage:general",
+                                 "UPDATE":"WRITE SELF IN input:message:update",
+                                 "SUCCESSFUL":"WRITE SELF IN input:message:successful"
                                  
                           }
    
