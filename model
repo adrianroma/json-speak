@@ -1,6 +1,6 @@
 {
    "REGISTER":{
-               "CHECK_SESSION":{ "YES":["CHECK_USERNAME"],
+               "CHECK_SESSION":{ "YES":["CHECK_USERNAME#EXIST"],
                                  "NOT":["MESSSAGE"]
                                }
                "CHECK_USERNAME":{
@@ -8,14 +8,14 @@
                                  "NOT_EXIST":["MAKE_REGISTER"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":"",
-                                 "REGISTRED":"",
-                                 "EMPTY_FIELDS":"",
-                                 "NECESARY_FIELDS":""
+                                 "NOT_REGISTRED":"REGISTRED#FALSE",
+                                 "REGISTRED":"SELECT name FROM user:client WHERE name=input:user:name",
+                                 
+                                 "NECESARY_FIELDS":"SELECT * FROM input:user WHERE =   "
                 
                 },
                 "MESSAGE":{
-                                 "ERROR":"",   
+                                 "ERROR":"UPDATE ",   
                                  "WARNING":"",
                                  "UPDATE":"",
                                  "SUCCESSFUL":""
