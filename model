@@ -38,11 +38,13 @@
     
     },                  
    "SESSION":{
-           "GUEST":"",
-           "NOT":"",
-           "USER":"",
            "CLIENT":"",
-           "ADMIN":""
+           "USER":"",
+           "ADMIN":"SELECT name IN admin ",
+           "YES":"SELECT true IN frontend:session WHERE key=frontend:key",
+           "ERROR":"",
+           "NOT":""
+ 
    },
    "BROWSE":{
            "LOCATED_AND_LISTEN":[],
