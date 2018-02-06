@@ -15,7 +15,11 @@
                 
                 },
                 "MESSAGE":{
-                           
+                                 "ERROR":"",   
+                                 "WARNING":"",
+                                 "UPDATE":"",
+                                 "SUCCESSFUL":""
+                                 
                           }
    
               },
@@ -88,10 +92,37 @@
             "TRACK_ORDER":""
    
    },
-   "PRODUCT":{
+   "SERVICE":{
+            
+           "CREATE":"",
+           "SUSCRIPTED":"",
+           "DELETE":""
    
    },
-  
+   "PRODUCT":{
+           "VIEW":""
+           "PICKED":"",
+           "UN_PICKED":""
+           "SELL_OUT":"",
+           "IN_STOCK":"",
+           "CREATE":""
+           "DELETE":"",
+           "UPDATED":""
+   },
+   "ADDRESS":{
+       
+   
+   },
+   
+   "SHIPPING":{
+           "":""
+          
+   
+   }
+   
+   "PRODUCT_COLLECTION":{
+   
+   },
    "CATEGORY":{
    
    },
