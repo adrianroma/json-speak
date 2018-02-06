@@ -1,32 +1,67 @@
 {
-   "FORM":{"":""},
-   "MENU":{},
-   "CARD":{},
-   "DIALOG":{},
-   "POPUP":{},
-   "WAY":{},
-   "CLOUD":{},
-   "SLIDE":{},
-   "INSTRUCTION":{},
-   "FOLLOW":{},
-   "ARTICLE":{}
-   "TRACK":{},
-   "EQUATION":{},
-   "BOX":{},
-   "SEARCH":{},
-   "LIST":{},
-   "ACCOUNT":{},
-   "PAY":{},
-   "MAP":{},
-   "RASTER":{},
-   "IMAGE":{},
-   "VIDEO":{},
-   "SOUND":{},
-   "FILE":{},
-   "DASHBOARD":{},
-   "GRAPH":{},
-   "MAIL":{},
-   "SMS":{},
-   "CHAT":{}
+   "REGISTER":{
+               "CHECK_SESSION":{ "YES":["MAKE_REGISTER"],
+                                 "NOT":["MESSSGE"]
+                               }
+               "CHECK_USERNAME":{
+                                 "EXIST":"["REGISTRED"]",
+                                 "NOT_EXIST":["MAKE_REGISTER"]
+                               },
+                "MAKE_REGISTER":{
+                                 "NOT_REGISTRED":"",
+                                 "REGISTRED":"",
+                                 "EMPTY_FIELDS":"",
+                                 "NECESARY_FIELDS":""
+                
+                },
+                "MESSAGE":{
+                           
+                          }
    
+              },
+              
+    "LOGIN":{
+            "CHECK_SESSION":{
+                                  "YES":["LOG"],
+                                  "NOT":""
+                            },
+            "LOG":{
+                     "SUCCESSFUL":[],
+                     "USER_NOT_EXIST":[],
+                     "FORGOT_DATA":[]
+                  }
+                  
+    
+    },                  
+   "SESSION":{
+           "GUEST":"",
+           "NOT":"",
+           "USER":"",
+           "CLIENT":"",
+           "ADMIN":""
+   },
+   "ERROR":{
+   
+   
+          },
+   "ACCOUNT":{
+            "COMPLETED":[],
+            "START":[],
+            "DELETE":[]
+           },
+   
+   "CLIENT_TASK":{
+   
+   
+   },
+   "USER_TASK":{
+   
+   
+   },
+   "ADMIN_TASK":{
+   
+   
+   }
+
+
 }
