@@ -95,8 +95,18 @@
    "SERVICE":{
             
            "CREATE":"",
+           "PLACE":"",
+           "SCHEDULE":"",
+           "START":"",
+           "END":""
            "SUSCRIPTED":"",
-           "DELETE":""
+           "UNSUSCRIPTED":""
+           "CLIENTS":"",
+           "USERS":""
+           "DELETE":"",
+           "UNKNOW":"",
+           "CANCELLED":"",
+           "SUSPENDED":""
    
    },
    "PRODUCT":{
@@ -110,12 +120,19 @@
            "UPDATED":""
    },
    "ADDRESS":{
-       
+          "INCOMPLETE":"",
+          "COMPLETE":""
+          "VERIFIED":"",
+          "UNVERIFIED":"",
    
    },
    
    "SHIPPING":{
-           "":""
+           "AVAILABLE":"",
+           "UNAVAILABLE":"",
+           "TRACK":"",
+           "CREATE":"",
+           "CANCELLED"
           
    
    }
