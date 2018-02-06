@@ -1,24 +1,26 @@
 {
    "REGISTER":{
-               "CHECK_SESSION":{ "YES":["CHECK_USERNAME:EXIST:TRUE"],
-                                 "NOT":["CHECK_USERNAME:NOT_EXIST:TRUE","MESSAGE:ERROR:error:user:not"]
+               "CHECK_SESSION":{ 
+                                 "YES":["CHECK_USERNAME:EXIST:0:TRUE"],
+                                 "NOT":["CHECK_USERNAME:NOT_EXIST:0:TRUE","MESSAGE:ERROR:error:user:not"]
                                }
                "CHECK_USERNAME":{
-                                 "EXIST":"["MAKE_REGISTER:REGISTRED:TRUE"]",
-                                 "NOT_EXIST":["MAKE_REGISTER:REGISTRED:FALSE"]
+                                 "EXIST":"["MAKE_REGISTER:REGISTRED:0:TRUE"]",
+                                 "NOT_EXIST":["MAKE_REGISTER:REGISTRED:0:FALSE"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":"MAKE_REGISTER:REGISTRED:FALSE",
-                                 "REGISTRED":"SELECT name FROM user:client WHERE name=input:user:name",
-                                 "REGISTER":"PUSH input:user FROM "
-                                 "NECESARY_FIELDS":"COMPARE input:user WITH required:user"
+                                 "NOT_REGISTRED":["MAKE_REGISTER:REGISTRED:0:FALSE"],
+                                 "REGISTRED":["SELECT name FROM user:client WHERE name=input:user:name"],
+                                 "NECESARY_FIELDS":["CHECK input:user REQUIRED"],
+                                 "REGISTER":["MAKE_REISTER:REGISTRED:0:FALSE",MAKE_REGISTER:NECESARY_FIELDS:0:FALSE,"PUSH input:user INTO system:user"]
+                                 
                 
                 },
                 "MESSAGE":{
-                                 "ERROR":"WRITE SELF IN input:message:general",   
-                                 "WARNING":"WRITE SELF IN input:meesage:general",
-                                 "UPDATE":"WRITE SELF IN input:message:update",
-                                 "SUCCESSFUL":"WRITE SELF IN input:message:successful"
+                                 "ERROR":["WRITE SELF IN input:message:general"],   
+                                 "WARNING":["WRITE SELF IN input:meesage:general"],
+                                 "UPDATE":["WRITE SELF IN input:message:update"],
+                                 "SUCCESSFUL":["WRITE SELF IN input:message:successful"]
                                  
                           }
    
