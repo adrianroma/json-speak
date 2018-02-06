@@ -1,7 +1,7 @@
 {
    "REGISTER":{
-               "CHECK_SESSION":{ "YES":["MAKE_REGISTER"],
-                                 "NOT":["MESSSGE"]
+               "CHECK_SESSION":{ "YES":["CHECK_USERNAME"],
+                                 "NOT":["MESSSAGE"]
                                }
                "CHECK_USERNAME":{
                                  "EXIST":"["REGISTRED"]",
