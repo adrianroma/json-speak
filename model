@@ -1,8 +1,8 @@
 {
    "REGISTER":{
                "CHECK_SESSION":{ 
-                                 "YES":["SELECT key FROM cache:session WHERE id=input:id","CHECK_USERNAME"],
-                                 "NOT":["REGISTER:CHECK_SESSION:YES:FALSE"]
+                                 "YES":"SESSION:STATE",
+                                 "NOT":["REGISTER:CHECK_SESSION:YES==FALSE"]
                                }
                "CHECK_USERNAME":{
                                  "EXIST":"["REGISTER:MAKE_REGISTER:REGISTRED:TRUE"]",
@@ -16,7 +16,7 @@
                                            "REGISTER:MAKE_REISTER:REGISTRED:FALSE",
                                            "REGISTER:MAKE_REGISTER:NECESARY_FIELDS:FALSE",
                                            "PUSH input:user INTO system:user",
-                                           "LOGIN:LOG:SUCCESSFUL:input:user"
+                                           "LOGIN:LOG:SUCCESSFUL=input:user"
                                            ]
                                  
                 
@@ -33,20 +33,21 @@
               
     "LOGIN":{
             "CHECK_SESSION":"REGISTER:CHECK_SESSION",
-            "LOG":{
-                     "SUCCESSFUL":[
-                                   "SELECT key,type FROM user:client WHERE key=input:user:name AND nick=input:user:nick",
-                                   "SET key,type IN cache:user"
-                                   ],
-                     "USER_NOT_EXIST":["LOGIN:LOG:SUCCESSFUL:FALSE"],
-                     "FORGOT_DATA":["SELECT key FROM user:client WHERE key=input:user:name OR nick=input:user:nick"]
-                  }
+          
+             "SUCCESSFUL":[
+                          "SELECT key,type FROM user:client WHERE key=input:user:name AND nick=input:user:nick",
+                          "SET key,type IN cache:user"
+                          ],
+            "USER_NOT_EXIST":["LOGIN:LOG:SUCCESSFUL:FALSE"],
+            "FORGOT_DATA":["SELECT key FROM user:client WHERE key=input:user:name OR nick=input:user:nick"]
+                  
                   
     
     },                  
    "SESSION":{
-           "TYPE":[""],
-           "STATE":[""]
+           "TYPE":["SELECT type FROM cache:session WHERE id=input:id"],
+                              
+           "STATE":["SELECT state FROM cache:session WHERE id=input:id"]
  
    },
    "BROWSE":{
