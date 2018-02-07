@@ -1,26 +1,31 @@
 {
    "REGISTER":{
                "CHECK_SESSION":{ 
-                                 "YES":["CHECK_USERNAME:EXIST:0:TRUE"],
-                                 "NOT":["CHECK_USERNAME:NOT_EXIST:0:TRUE","MESSAGE:ERROR:error:user:not"]
+                                 "YES":["SELECT key FROM cache:session WHERE id=input:id","CHECK_USERNAME"],
+                                 "NOT":["REGISTER:CHECK_SESSION:YES:0:FALSE"]
                                }
                "CHECK_USERNAME":{
-                                 "EXIST":"["MAKE_REGISTER:REGISTRED:0:TRUE"]",
-                                 "NOT_EXIST":["MAKE_REGISTER:REGISTRED:0:FALSE"]
+                                 "EXIST":"["REGISTER:MAKE_REGISTER:REGISTRED:0:TRUE"]",
+                                 "NOT_EXIST":["REGISTER:MAKE_REGISTER:REGISTRED:0:FALSE"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":["MAKE_REGISTER:REGISTRED:0:FALSE"],
+                                 "NOT_REGISTRED":["REGISTER:MAKE_REGISTER:REGISTRED:0:FALSE"],
                                  "REGISTRED":["SELECT name FROM user:client WHERE name=input:user:name"],
                                  "NECESARY_FIELDS":["CHECK input:user REQUIRED"],
-                                 "REGISTER":["MAKE_REISTER:REGISTRED:0:FALSE",MAKE_REGISTER:NECESARY_FIELDS:0:FALSE,"PUSH input:user INTO system:user"]
+                                 "REGISTER":[
+                                           "REGISTER:MAKE_REISTER:REGISTRED:0:FALSE",
+                                           "REGISTER:MAKE_REGISTER:NECESARY_FIELDS:0:FALSE",
+                                           "PUSH input:user INTO system:user",
+                                           "LOGIN:LOG:SUCCESSFUL:0:input:user"
+                                           ]
                                  
                 
                 },
                 "MESSAGE":{
-                                 "ERROR":["WRITE SELF IN input:message:general"],   
-                                 "WARNING":["WRITE SELF IN input:meesage:general"],
-                                 "UPDATE":["WRITE SELF IN input:message:update"],
-                                 "SUCCESSFUL":["WRITE SELF IN input:message:successful"]
+                                 "ERROR":["SET SELF IN input:message:general"],   
+                                 "WARNING":["SET SELF IN input:meesage:general"],
+                                 "UPDATE":["SET SELF IN input:message:update"],
+                                 "SUCCESSFUL":["SET SELF IN input:message:successful"]
                                  
                           }
    
@@ -28,24 +33,27 @@
               
     "LOGIN":{
             "CHECK_SESSION":{
-                                  "YES":["LOG"],
-                                  "NOT":""
+                                 "YES":["SELECT key FROM cache:session WHERE id=input:id","CHECK_USERNAME"],
+                                 "NOT":["REGISTER:CHECK_SESSION:YES:0:FALSE"]
                             },
             "LOG":{
-                     "SUCCESSFUL":[],
-                     "USER_NOT_EXIST":[],
-                     "FORGOT_DATA":[]
+                     "SUCCESSFUL":[
+                                   "SELECT key,type FROM user:client WHERE key=input:user:name AND nick=input:user:nick",
+                                   "SET key,type IN cache:user"
+                                   ],
+                     "USER_NOT_EXIST":["LOGIN:LOG:SUCCESSFUL:FALSE"],
+                     "FORGOT_DATA":["SELECT key FROM user:client WHERE key=input:user:name OR nick=input:user:nick"]
                   }
                   
     
     },                  
    "SESSION":{
-           "TYPE":["SELECT type FROM frontend:session WHERE key=frontend:key"],
-           "STATE":["SELECT true FROM frontend:session WHERE key=frontend:key"]
+           "TYPE":[""],
+           "STATE":[""]
  
    },
    "BROWSE":{
-           "LOCATED":["SELECT lat,long FROM frontend:location WHERE key=frontend:key"],
+           "LOCATED":["SELECT lat,long FROM input:location WHERE key=input:key"],
            "BROWSING":[]
            "LISTEN":[],
            "ERROR":[]
@@ -135,9 +143,14 @@
            "CANCELLED"
           
    
-   }
+   },
+   "SERVICE_COLLECTION":{
    
+   },
    "PRODUCT_COLLECTION":{
+   
+   },
+   "DASHBOARD":{
    
    },
    "CATEGORY":{
