@@ -32,10 +32,7 @@
               },
               
     "LOGIN":{
-            "CHECK_SESSION":{
-                                 "YES":["SELECT key FROM cache:session WHERE id=input:id","CHECK_USERNAME"],
-                                 "NOT":["REGISTER:CHECK_SESSION:YES:0:FALSE"]
-                            },
+            "CHECK_SESSION":"REGISTER:CHECK_SESSION",
             "LOG":{
                      "SUCCESSFUL":[
                                    "SELECT key,type FROM user:client WHERE key=input:user:name AND nick=input:user:nick",
