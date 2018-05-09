@@ -1,0 +1,147 @@
+[
+        {
+          "canonicalForm": "1/24",
+          "list": [
+            "en una hora"
+          ]
+        },
+        {
+          "canonicalForm": "12/24",
+          "list": [
+            "en medio dia"
+          ]
+        },
+        {
+          "canonicalForm": "24/24",
+          "list": [
+            "en un dia"
+          ]
+        },
+        {
+          "canonicalForm": "48/24",
+          "list": [
+            "en dos dias",
+            "pasado mañana"
+          ]
+        },
+        {
+          "canonicalForm": "36/24",
+          "list": [
+            "para mañana"
+          ]
+        },
+        {
+          "canonicalForm": "-24/24",
+          "list": [
+            "ayer",
+            "el dia de ayer",
+            "hace un dia"
+          ]
+        },
+        {
+          "canonicalForm": "-48/24",
+          "list": [
+            "hace dos dias",
+            "ante ayer"
+          ]
+        },
+        {
+          "canonicalForm": "1/48",
+          "list": [
+            "en media hora",
+            "en 30 minutos"
+          ]
+        },
+        {
+          "canonicalForm": "6/24",
+          "list": [
+            "temprano"
+          ]
+        },
+        {
+          "canonicalForm": "19/24",
+          "list": [
+            "en la noche"
+          ]
+        },
+        {
+          "canonicalForm": "15/24",
+          "list": [
+            "al atardecer"
+          ]
+        },
+        {
+          "canonicalForm": "1/1440",
+          "list": [
+            "en un minuto"
+          ]
+        },
+        {
+          "canonicalForm": "5/1440",
+          "list": [
+            "en 5 minutos",
+            "dame 5 minutos"
+          ]
+        },
+        {
+          "canonicalForm": "-5/1440",
+          "list": [
+            "hace cinco minutos",
+            "fue hace 5 minutos"
+          ]
+        },
+        {
+          "canonicalForm": "3/48",
+          "list": [
+            "en una hora y media"
+          ]
+        },
+        {
+          "canonicalForm": "-1/1440",
+          "list": [
+            "hace un minuto",
+            "hace un momentito",
+            "hace un ratito"
+          ]
+        },
+        {
+          "canonicalForm": "-1/48",
+          "list": [
+            "hace media hora",
+            "hace como 30 minutos"
+          ]
+        },
+        {
+          "canonicalForm": "0",
+          "list": [
+            "hoy",
+            "el dia de hoy",
+            "ahorita",
+            "ahora",
+            "en este momento",
+            "ahorita mismo"
+          ]
+        },
+        {
+          "canonicalForm": "-10/1440",
+          "list": [
+            "hace diez minutos",
+            "hace 10 minutos",
+            "fue hace como en 10 minutos"
+          ]
+        },
+        {
+          "canonicalForm": "-168/24",
+          "list": [
+            "hace una semana",
+            "la semana pasada"
+          ]
+        },
+        {
+          "canonicalForm": "-72/24",
+          "list": [
+            "hace tres dias",
+            "hace 3 dias"
+          ]
+        }
+      ]
