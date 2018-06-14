@@ -1,0 +1,17 @@
+  "movimiento":{
+    
+      estar,inicar,movilizar,repetir,señalar,comenzar,encaminar,coger,finalizar,sacar,separar,fluir,detener,proveer,participar,reponer,arrastrar,terminar,distribuir,ordenar,encontar,buscar,obstruir,obstaculizar,caminar,llevar,traer,correr,parar,venir,volver,pasar,rotar,voltear,transladar,aguardar,tirar,recorrer,esperar,volar,colocar,posicionar,poner,estacionarse,finalizar
+
+            },      
+  
+  "objetos":{ 
+     preparar,usar,sustituir,comprimir,limpiar,dotar,dimensionar,restaurar,,iluminar,borrar,reposar,desaparecer,replicar,crecer,minimizar,copiar,dibujar,esculpir,maltratar,crear,hacer,colorear,iluminar,generar,aplanar,soldar,reunir,torcer,reparar , pintar , mezclar, quemar, trasnformar, romper , unir, tomar, escribir, herir, 
+  
+           }
+  "sensorial":{ 
+     ver,respirar,vivir,despertar,sentir, oler, enfocar,distinguir, igualar, diferenciar, separar, escuchar , avisar,hablar, estornudar, lagrimear, enfermar,palpar
+           }
+  
+  "metafisico": {
+    idear,ser,apreciar,cumplir,residir,otorgar,observar,evitar,razonar,coincidir,supervisar,dicrepar,soñar,visualizar,poder,describir,imitar,disimular,dolor,perder,ganar,pensar,superar,amar,agradar, ordenar,portarse,sorprender ,llorar,oir,interpretar,reir ,feliz ,nada, determinar,imaginar, decir ,solucionar, desespear, despejar, concluir, hablar ,diferenciar ,definir, suponer, cantar, saber, comprender
+     }
